@@ -36,4 +36,23 @@
     &--how {
         padding-inline: 34px;
     }
+
+    &__group {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        padding-top: 60px;
+    }
+
+    &__location--fill {
+        padding-inline: 40px;
+        text-transform: capitalize;
+    }
+
+    &__location--clear {
+        padding-inline: 55px;
+        background-color: transparent;
+        text-transform: capitalize;
+        border: 2px solid $accent-color;
+    }
 }

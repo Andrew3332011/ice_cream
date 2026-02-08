@@ -326,6 +326,22 @@ body {
 .button--how {
   padding-inline: 34px;
 }
+.button__group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  padding-top: 60px;
+}
+.button__location--fill {
+  padding-inline: 40px;
+  text-transform: capitalize;
+}
+.button__location--clear {
+  padding-inline: 55px;
+  background-color: transparent;
+  text-transform: capitalize;
+  border: 2px solid #f8d24e;
+}
 
 .products {
   padding-top: 60px;
@@ -339,6 +355,7 @@ body {
   text-transform: uppercase;
   color: #131313;
   text-align: center;
+  padding-top: 30px;
 }
 .products__desc {
   font-size: 16px;
@@ -354,18 +371,16 @@ body {
 .products__image {
   width: 302px;
   height: 302px;
-  position: absolute;
-  top: -180px;
+  position: relative;
   text-align: center;
+  top: -46px;
 }
 .products__list {
   display: flex;
   gap: 29px;
 }
 .products__item {
-  padding-inline: 64px;
-  position: relative;
-  padding-top: 164px;
+  padding-inline: 34px;
 }
 .products__item--green {
   background-color: #aec6a5;
@@ -432,6 +447,7 @@ body {
 .slider {
   background-image: url(../images/bg/ice-creams_bg.png);
   background-color: white;
+  padding-bottom: 228px;
 }
 .slider__img {
   display: block;
@@ -464,6 +480,19 @@ body {
   padding-top: 32px;
 }
 
+.location {
+  top: -128px;
+  position: relative;
+}
+.location__list {
+  display: flex;
+  gap: 32px;
+}
+.location__item {
+  background-color: white;
+  padding: 40px;
+  border-radius: 24px;
+}
 .location__type {
   font-weight: 500;
   font-size: 16px;
@@ -475,6 +504,7 @@ body {
   padding-block: 4px;
   display: inline;
   text-transform: uppercase;
+  border-radius: 6px;
 }
 .location__city {
   font-weight: 500;
@@ -483,6 +513,8 @@ body {
   letter-spacing: 0.04em;
   color: #131313;
   text-transform: capitalize;
+  padding-top: 32px;
+  padding-bottom: 8px;
 }
 .location__link {
   font-weight: 500;
@@ -490,17 +522,31 @@ body {
   line-height: 1.83;
   letter-spacing: 0.04em;
   color: #d6936d;
-  border-bottom: 1px solid #e1e1e1;
   padding-bottom: 32px;
+}
+.location__link::after {
+  content: "";
+  height: 1px;
+  width: 288px;
+  background-color: #e1e1e1;
+  margin-top: 32px;
+  display: block;
 }
 .location__link:hover {
   text-decoration: underline;
 }
-.location__hours-item-list {
+.location__hours-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
   padding-top: 32px;
+}
+.location__hours-list::after {
+  content: "";
+  height: 1px;
+  width: 288px;
+  background-color: #e1e1e1;
+  margin-top: 32px;
 }
 .location__hours-day {
   font-weight: 500;
@@ -515,4 +561,75 @@ body {
   font-size: 16px;
   line-height: 1.86;
   color: #ababab;
+}
+.location__contact-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-top: 32px;
+}
+.location__contact-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #131313;
+}
+
+.footer {
+  padding-top: 120px;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer__subtitle {
+  font-size: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+}
+.footer__title {
+  font-weight: 700;
+  font-size: 58px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #fcfcfc;
+  padding-top: 14px;
+}
+.footer__list {
+  display: flex;
+  gap: 30px;
+  justify-content: end;
+  padding-bottom: 40px;
+}
+.footer__icon {
+  width: 34px;
+  height: 34px;
+  fill: #84a178;
+  background-color: #f8d24e;
+  border-radius: 50px;
+  padding: 7px;
+}
+.footer__contact {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #131313;
+}
+.footer__number {
+  color: white;
+}
+.footer__bottom {
+  margin-top: 60px;
+  padding-block: 12px;
+  border-top: 1px solid #e1e1e1;
+}
+.footer__copyright {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+  color: #7a7a7a;
+  text-align: center;
 }

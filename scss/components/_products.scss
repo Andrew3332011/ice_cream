@@ -10,6 +10,7 @@
         text-transform: uppercase;
         color: $title-color;
         text-align: center;
+        padding-top: 30px;
     }
 
     &__desc {
@@ -28,10 +29,9 @@
     &__image {
         width: 302px;
         height: 302px;
-        position: absolute;
-        top: -180px;
+        position: relative;
         text-align: center;
-        
+        top: -46px;
         
     }
 
@@ -41,9 +41,8 @@
     }
 
     &__item {
-        padding-inline: 64px;
-        position: relative;
-        padding-top: 164px;
+        padding-inline: 34px;
+       
     }
 
     &__item--green {

@@ -1,4 +1,22 @@
 .location {
+top: -128px;
+position: relative;
+&__list {
+  display: flex;
+  gap: 32px;
+}
+
+&__item {
+  background-color: $third_accent-color;
+  padding: 40px;
+  border-radius: 24px;
+}
+
+
+
+
+
+
   &__type {
     font-weight: 500;
     font-size: 16px;
@@ -10,6 +28,7 @@
     padding-block: 4px;
     display: inline;
     text-transform: uppercase;
+    border-radius: 6px;
   }
 
   &__city {
@@ -19,6 +38,8 @@
     letter-spacing: 0.04em;
     color: $title-color;
     text-transform: capitalize;
+    padding-top: 32px;
+    padding-bottom: 8px;
   }
 
   &__link {
@@ -27,18 +48,33 @@
     line-height: 1.83;
     letter-spacing: 0.04em;
     color: $second_accent-color;
-    border-bottom: 1px solid $border-color;
     padding-bottom: 32px;
+    &::after {
+      content: "";
+      height: 1px;
+      width: 288px;
+      background-color: $border-color;
+      margin-top: 32px;
+      display: block;
+    }
     &:hover {
-        text-decoration: underline ;
+      text-decoration: underline;
     }
   }
 
-  &__hours-item-list {
+  &__hours-list {
     display: flex;
     flex-direction: column;
     gap: 12px;
     padding-top: 32px;
+
+    &::after {
+      content: "";
+      height: 1px;
+      width: 288px;
+      background-color: $border-color;
+      margin-top: 32px;
+    }
   }
 
   &__hours-day {
@@ -48,7 +84,6 @@
     letter-spacing: 0.04em;
     color: $title-color;
     text-transform: capitalize;
-    
   }
 
   &__hours-time {
@@ -56,5 +91,19 @@
     font-size: 16px;
     line-height: 1.86;
     color: $second_text-color;
+  }
+
+  &__contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding-top: 32px;
+  }
+
+  &__contact-item {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    color: $title-color;
   }
 }
