@@ -10,7 +10,7 @@
         text-transform: uppercase;
         color: $title-color;
         text-align: center;
-        padding-top: 30px;
+        padding-top: 46px;
     }
 
     &__desc {
@@ -29,10 +29,10 @@
     &__image {
         width: 302px;
         height: 302px;
-        position: relative;
         text-align: center;
-        top: -46px;
-        
+        margin-top: -183px;
+        border-radius: 50%;
+        box-shadow: 0 8px 30px 0 rgba(10, 136, 23, 0.25);
     }
 
     &__list {
@@ -47,6 +47,16 @@
 
     &__item--green {
         background-color: $background_first-color;
+        border-radius: 24px;
+    }
+
+    &__item--yellow {
+        background-color: $background_second-color;
+        border-radius: 24px;
+    }
+
+    &__item--orange {
+        background-color: $second_accent-color;
         border-radius: 24px;
     }
 }

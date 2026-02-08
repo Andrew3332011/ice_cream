@@ -187,7 +187,7 @@ body {
 }
 
 .hero {
-  padding-top: 45px;
+  padding-top: 31px;
   background-image: url(../images/bg/dots.png);
   background-repeat: no-repeat;
   background-position: bottom;
@@ -206,6 +206,7 @@ body {
   font-weight: 600;
   text-decoration: underline;
   font-family: "Montserrat", sans-serif;
+  padding: 12px 22px;
 }
 .hero__img-plate {
   width: 225px;
@@ -243,8 +244,7 @@ body {
 }
 .hero__container {
   display: flex;
-  gap: 190px;
-  align-items: center;
+  gap: 195px;
 }
 .hero__wrapper-plate {
   display: flex;
@@ -259,13 +259,13 @@ body {
 }
 .hero__wrapper-icecream {
   display: flex;
-  gap: 29px;
 }
 .hero__list {
   padding-top: 22px;
   display: flex;
   flex-direction: column;
   gap: 16px;
+  max-width: 64px;
 }
 
 .title {
@@ -279,6 +279,9 @@ body {
 }
 .title--how {
   color: #fcfcfc;
+}
+.title--products {
+  padding-bottom: 303px;
 }
 
 .subtitle {
@@ -314,7 +317,7 @@ body {
 }
 .button__container {
   display: flex;
-  gap: 34px;
+  gap: 12px;
   align-items: center;
 }
 .button--hero {
@@ -355,7 +358,7 @@ body {
   text-transform: uppercase;
   color: #131313;
   text-align: center;
-  padding-top: 30px;
+  padding-top: 46px;
 }
 .products__desc {
   font-size: 16px;
@@ -371,9 +374,10 @@ body {
 .products__image {
   width: 302px;
   height: 302px;
-  position: relative;
   text-align: center;
-  top: -46px;
+  margin-top: -183px;
+  border-radius: 50%;
+  box-shadow: 0 8px 30px 0 rgba(10, 136, 23, 0.25);
 }
 .products__list {
   display: flex;
@@ -384,6 +388,14 @@ body {
 }
 .products__item--green {
   background-color: #aec6a5;
+  border-radius: 24px;
+}
+.products__item--yellow {
+  background-color: #efd478;
+  border-radius: 24px;
+}
+.products__item--orange {
+  background-color: #d6936d;
   border-radius: 24px;
 }
 
