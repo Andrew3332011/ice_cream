@@ -1,0 +1,63 @@
+.how {
+    padding-top: 58px;
+    padding-bottom: 178px;
+    &__container {
+        display: flex;
+        align-items: center;
+        gap: 109px;
+        padding-top: 82px;
+    }
+
+    &__desc {
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+        color: $text-color;
+        padding-bottom: 8px;
+    }
+
+    &__recipe {
+        font-size: 14px;
+        line-height: 1.94;
+        letter-spacing: 0.04em;
+        color: $text-color;
+        padding-bottom: 54px;
+    }
+
+    &__image {
+        width: 490px;
+        height: 490px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 32px;
+        padding-top: 60px;
+    }
+
+    &__icon {
+        width: 36px;
+        height: 36px;
+        background-color: $accent-color;
+        border-radius: 50px;
+        padding: 7px;
+        display: block;
+        margin: auto;
+    }
+
+    &__amount {
+        font-weight: 700;
+        font-size: 58px;
+        letter-spacing: 0.04em;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 12px;
+        color: $text-color;
+    }
+
+    &__text {
+        color: $text-color;
+        letter-spacing: 0.02em;
+        line-height: 1.76;
+        text-align: center;
+    }
+}

@@ -1,0 +1,53 @@
+.products {
+    padding-top: 60px;
+    background-image: url(../images/bg/ice-creams_bg.png);
+    background-color: $third_accent-color;
+
+    &__name {
+        font-weight: 700;
+        font-size: 30px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $title-color;
+        text-align: center;
+    }
+
+    &__desc {
+        font-size: 16px;
+        line-height: 1.76;
+        letter-spacing: 0.04em;
+        text-align: center;
+        padding-top: 66px;
+    }
+
+    &__arrow {
+        width: 40px;
+        height: 16px;
+    }
+
+    &__image {
+        width: 302px;
+        height: 302px;
+        position: absolute;
+        top: -180px;
+        text-align: center;
+        
+        
+    }
+
+    &__list {
+        display: flex;
+        gap: 29px;
+    }
+
+    &__item {
+        padding-inline: 64px;
+        position: relative;
+        padding-top: 164px;
+    }
+
+    &__item--green {
+        background-color: $background_first-color;
+        border-radius: 24px;
+    }
+}

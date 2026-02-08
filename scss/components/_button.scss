@@ -1,0 +1,39 @@
+.button {
+    background-color: $accent-color;
+    padding-block: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    line-height: 1.29;
+
+    &__icon {
+        width: 12px;
+        height: 12px;
+        padding-left: 4px;
+    }
+
+    &--header {
+        padding-inline: 36px;
+    }
+
+    &__container {
+        display: flex;
+        gap: 34px;
+        align-items: center;
+       
+    }
+
+    &--hero {
+        border: 2px solid $accent-color;
+        padding-inline: 34px;
+        text-transform: capitalize;
+        background-color: transparent;
+    }
+
+    &--how {
+        padding-inline: 34px;
+    }
+}

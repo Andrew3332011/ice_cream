@@ -1,0 +1,96 @@
+.hero {
+  padding-top: 45px;
+    background-image: url(../images/bg/dots.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+  &__title {
+    font-size: 38px;
+    font-family: $title-font;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    color: $text-color;
+    padding-bottom: 24px;
+    padding-top: 45px;
+  }
+
+  &__link {
+    color: $accent-color;
+    font-weight: 600;
+    text-decoration: underline;
+    font-family: $main-font;
+  }
+
+  &__img-plate {
+    width: 225px;
+    height: 225px;
+  }
+
+  &__text-plate {
+    color: $third_accent-color;
+    font-family: $accent-font;
+    line-height: 1.4;
+    padding-bottom: 24px;
+  }
+
+  &__arrow {
+    fill: $text-color;
+    width: 40px;
+    height: 16px;
+  }
+
+  &__img {
+    width: 456px;
+    height: 560px;
+  }
+
+  &__item-subtitle {
+    font-weight: 900;
+    font-size: 46px;
+    letter-spacing: 0.04em;
+    color: $title-color;
+  }
+
+  &__item-text {
+    color: $text-color;
+    padding-top: 4px;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+  }
+
+  &__container {
+    display: flex;
+    gap: 190px;
+    align-items: center;
+  }
+
+  &__wrapper-plate {
+    display: flex;
+    gap: 16px;
+    
+    padding-top: 44px;
+  }
+
+  &__wrapper-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    padding-top: 67px;
+  }
+
+  &__wrapper-icecream {
+    display: flex;
+    gap: 29px;
+    
+  }
+
+  &__list {
+    padding-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

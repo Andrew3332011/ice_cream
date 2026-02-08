@@ -1,0 +1,36 @@
+.header {
+    &__container {
+        display: flex;
+       margin-top: 8px;
+        align-items: center;
+    }
+
+    &__nav {
+        padding-left: 308px;
+        padding-right: 204px;
+    }
+
+    &__nav-list {
+        display: flex;
+        gap: 28px;
+        align-items: center;
+    }
+
+    &__logo-icon {
+        fill: $accent-color;
+        width: 60px;
+        height: 65px;
+    }
+
+    &__nav-link {
+        text-decoration: none;
+        color: $text-color;
+        font-weight: 700;
+        font-family: $main-font;
+        &:hover {
+            color: $accent-color;
+        }
+    }
+
+
+}

@@ -1,0 +1,518 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding-inline: 15px;
+}
+
+body {
+  background-color: #84a178;
+  font-family: "Montserrat", sans-serif;
+}
+
+.header__container {
+  display: flex;
+  margin-top: 8px;
+  align-items: center;
+}
+.header__nav {
+  padding-left: 308px;
+  padding-right: 204px;
+}
+.header__nav-list {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+}
+.header__logo-icon {
+  fill: #f8d24e;
+  width: 60px;
+  height: 65px;
+}
+.header__nav-link {
+  text-decoration: none;
+  color: #fcfcfc;
+  font-weight: 700;
+  font-family: "Montserrat", sans-serif;
+}
+.header__nav-link:hover {
+  color: #f8d24e;
+}
+
+.hero {
+  padding-top: 45px;
+  background-image: url(../images/bg/dots.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+.hero__title {
+  font-size: 38px;
+  font-family: "Seymour One", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+  padding-bottom: 24px;
+  padding-top: 45px;
+}
+.hero__link {
+  color: #f8d24e;
+  font-weight: 600;
+  text-decoration: underline;
+  font-family: "Montserrat", sans-serif;
+}
+.hero__img-plate {
+  width: 225px;
+  height: 225px;
+}
+.hero__text-plate {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.4;
+  padding-bottom: 24px;
+}
+.hero__arrow {
+  fill: #fcfcfc;
+  width: 40px;
+  height: 16px;
+}
+.hero__img {
+  width: 456px;
+  height: 560px;
+}
+.hero__item-subtitle {
+  font-weight: 900;
+  font-size: 46px;
+  letter-spacing: 0.04em;
+  color: #131313;
+}
+.hero__item-text {
+  color: #fcfcfc;
+  padding-top: 4px;
+}
+.hero__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+}
+.hero__container {
+  display: flex;
+  gap: 190px;
+  align-items: center;
+}
+.hero__wrapper-plate {
+  display: flex;
+  gap: 16px;
+  padding-top: 44px;
+}
+.hero__wrapper-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: 67px;
+}
+.hero__wrapper-icecream {
+  display: flex;
+  gap: 29px;
+}
+.hero__list {
+  padding-top: 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.title {
+  font-size: 36px;
+  font-family: "Seymour One", sans-serif;
+  letter-spacing: 0.06em;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 12px;
+  color: #131313;
+}
+.title--how {
+  color: #fcfcfc;
+}
+
+.subtitle {
+  font-weight: 800;
+  font-size: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #131313;
+}
+.subtitle--how {
+  color: #fcfcfc;
+}
+
+.button {
+  background-color: #f8d24e;
+  padding-block: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  line-height: 1.29;
+}
+.button__icon {
+  width: 12px;
+  height: 12px;
+  padding-left: 4px;
+}
+.button--header {
+  padding-inline: 36px;
+}
+.button__container {
+  display: flex;
+  gap: 34px;
+  align-items: center;
+}
+.button--hero {
+  border: 2px solid #f8d24e;
+  padding-inline: 34px;
+  text-transform: capitalize;
+  background-color: transparent;
+}
+.button--how {
+  padding-inline: 34px;
+}
+
+.products {
+  padding-top: 60px;
+  background-image: url(../images/bg/ice-creams_bg.png);
+  background-color: white;
+}
+.products__name {
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #131313;
+  text-align: center;
+}
+.products__desc {
+  font-size: 16px;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding-top: 66px;
+}
+.products__arrow {
+  width: 40px;
+  height: 16px;
+}
+.products__image {
+  width: 302px;
+  height: 302px;
+  position: absolute;
+  top: -180px;
+  text-align: center;
+}
+.products__list {
+  display: flex;
+  gap: 29px;
+}
+.products__item {
+  padding-inline: 64px;
+  position: relative;
+  padding-top: 164px;
+}
+.products__item--green {
+  background-color: #aec6a5;
+  border-radius: 24px;
+}
+
+.how {
+  padding-top: 58px;
+  padding-bottom: 178px;
+}
+.how__container {
+  display: flex;
+  align-items: center;
+  gap: 109px;
+  padding-top: 82px;
+}
+.how__desc {
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+  padding-bottom: 8px;
+}
+.how__recipe {
+  font-size: 14px;
+  line-height: 1.94;
+  letter-spacing: 0.04em;
+  color: #fcfcfc;
+  padding-bottom: 54px;
+}
+.how__image {
+  width: 490px;
+  height: 490px;
+}
+.how__list {
+  display: flex;
+  gap: 32px;
+  padding-top: 60px;
+}
+.how__icon {
+  width: 36px;
+  height: 36px;
+  background-color: #f8d24e;
+  border-radius: 50px;
+  padding: 7px;
+  display: block;
+  margin: auto;
+}
+.how__amount {
+  font-weight: 700;
+  font-size: 58px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 12px;
+  color: #fcfcfc;
+}
+.how__text {
+  color: #fcfcfc;
+  letter-spacing: 0.02em;
+  line-height: 1.76;
+  text-align: center;
+}
+
+.slider {
+  background-image: url(../images/bg/ice-creams_bg.png);
+  background-color: white;
+}
+.slider__img {
+  display: block;
+  margin: auto;
+}
+.slider__pfp {
+  padding-top: 140px;
+  display: block;
+  margin: auto;
+  padding-bottom: 32px;
+}
+.slider__text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: #fcfcfc;
+  background-color: #84a178;
+  padding-inline: 109px;
+  padding-block: 43px;
+  border-radius: 24px;
+}
+.slider__bio {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  color: #131313;
+  text-align: center;
+  padding-top: 32px;
+}
+
+.location__type {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  color: #131313;
+  background-color: #f8d24e;
+  padding-inline: 14px;
+  padding-block: 4px;
+  display: inline;
+  text-transform: uppercase;
+}
+.location__city {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #131313;
+  text-transform: capitalize;
+}
+.location__link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.83;
+  letter-spacing: 0.04em;
+  color: #d6936d;
+  border-bottom: 1px solid #e1e1e1;
+  padding-bottom: 32px;
+}
+.location__link:hover {
+  text-decoration: underline;
+}
+.location__hours-item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-top: 32px;
+}
+.location__hours-day {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  letter-spacing: 0.04em;
+  color: #131313;
+  text-transform: capitalize;
+}
+.location__hours-time {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.86;
+  color: #ababab;
+}

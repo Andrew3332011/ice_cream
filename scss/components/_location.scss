@@ -1,0 +1,60 @@
+.location {
+  &__type {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.04em;
+    color: $title-color;
+    background-color: $accent-color;
+    padding-inline: 14px;
+    padding-block: 4px;
+    display: inline;
+    text-transform: uppercase;
+  }
+
+  &__city {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: $title-color;
+    text-transform: capitalize;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.83;
+    letter-spacing: 0.04em;
+    color: $second_accent-color;
+    border-bottom: 1px solid $border-color;
+    padding-bottom: 32px;
+    &:hover {
+        text-decoration: underline ;
+    }
+  }
+
+  &__hours-item-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-top: 32px;
+  }
+
+  &__hours-day {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    letter-spacing: 0.04em;
+    color: $title-color;
+    text-transform: capitalize;
+    
+  }
+
+  &__hours-time {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.86;
+    color: $second_text-color;
+  }
+}

@@ -1,0 +1,37 @@
+.slider {
+    background-image: url(../images/bg/ice-creams_bg.png);
+    background-color: $third_accent-color;
+    &__img {
+        display: block;
+        margin: auto;
+    }
+
+    &__pfp {
+        padding-top: 140px;
+        display: block;
+        margin: auto;
+        padding-bottom: 32px;
+    }
+
+    &__text {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.86;
+        letter-spacing: 0.04em;
+        text-align: center;
+        color: $text-color;
+        background-color: $background-color;
+        padding-inline: 109px;
+        padding-block: 43px;
+        border-radius: 24px;
+    }
+
+    &__bio {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.86;
+        color: $title-color;
+        text-align: center;
+        padding-top: 32px;
+    }
+}
