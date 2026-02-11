@@ -350,6 +350,7 @@ body {
   padding-top: 60px;
   background-image: url(../images/bg/ice-creams_bg.png);
   background-color: white;
+  padding-bottom: 60px;
 }
 .products__name {
   font-weight: 700;
@@ -366,9 +367,9 @@ body {
   letter-spacing: 0.04em;
   text-align: center;
   padding-top: 66px;
+  padding-bottom: 60px;
 }
 .products__arrow {
-  width: 40px;
   height: 16px;
 }
 .products__image {
@@ -385,6 +386,7 @@ body {
 }
 .products__item {
   padding-inline: 34px;
+  padding-bottom: 60px;
 }
 .products__item--green {
   background-color: #aec6a5;
@@ -425,11 +427,13 @@ body {
 .how__image {
   width: 490px;
   height: 490px;
+  position: absolute;
+  top: 39px;
 }
 .how__list {
   display: flex;
   gap: 32px;
-  padding-top: 60px;
+  padding-top: 99px;
 }
 .how__icon {
   width: 36px;
@@ -454,6 +458,15 @@ body {
   letter-spacing: 0.02em;
   line-height: 1.76;
   text-align: center;
+}
+.how__img-wrapper {
+  width: 490px;
+  height: 490px;
+  background-color: #f8d24e;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+  box-shadow: 0 8px 30px 0 rgba(153, 114, 23, 0.25);
 }
 
 .slider {
@@ -504,6 +517,7 @@ body {
   background-color: white;
   padding: 40px;
   border-radius: 24px;
+  box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
 }
 .location__type {
   font-weight: 500;
