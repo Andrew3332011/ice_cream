@@ -19,6 +19,17 @@
     text-decoration: underline;
     font-family: $main-font;
     padding: 12px 22px;
+    &:hover {
+      color: $hover-color;
+    }
+
+    &:focus {
+      color: $third_accent-color;
+    }
+
+    &:disabled {
+      color: $disabled-color;
+    }
   }
 
   &__img-plate {

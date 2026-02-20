@@ -13,10 +13,24 @@
         width: 12px;
         height: 12px;
         padding-left: 4px;
+        &:focus {
+            fill: $third_accent-color;
+        }
     }
 
     &--header {
         padding-inline: 36px;
+        &:hover {
+            background-color: $hover-color;
+        }
+
+        &:focus {
+            color: $third_accent-color;
+        }
+
+        &:disabled {
+            background-color: $disabled-color;
+        }
     }
 
     &__container {
@@ -31,10 +45,32 @@
         padding-inline: 34px;
         text-transform: capitalize;
         background-color: transparent;
+        &:hover {
+            border: 2px solid $hover-color;
+        }
+
+        &:focus {
+            color: $third_accent-color;
+        }
+
+        &:disabled {
+            border: 2px solid $disabled-color;
+        }
     }
 
     &--how {
         padding-inline: 34px;
+        &:hover {
+            background-color: $hover-color;
+        }
+
+        &:focus {
+            color: $third_accent-color;
+        }
+
+        &:disabled {
+            background-color: $disabled-color;
+        }
     }
 
     &__group {
@@ -47,6 +83,17 @@
     &__location--fill {
         padding-inline: 40px;
         text-transform: capitalize;
+        &:hover {
+            background-color: $hover-color;
+        }
+
+        &:focus {
+            color: $third_accent-color;
+        }
+
+        &:disabled {
+            background-color: $disabled-color;
+        }
     }
 
     &__location--clear {
@@ -54,5 +101,17 @@
         background-color: transparent;
         text-transform: capitalize;
         border: 2px solid $accent-color;
+
+        &:hover {
+            border: 2px solid $hover-color;
+        }
+
+        &:focus {
+            color: $third_accent-color;
+        }
+
+        &:disabled {
+            border: 2px solid $disabled-color;
+        }
     }
 }

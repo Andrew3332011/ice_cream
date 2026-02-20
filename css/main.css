@@ -208,6 +208,15 @@ body {
   font-family: "Montserrat", sans-serif;
   padding: 12px 22px;
 }
+.hero__link:hover {
+  color: #0a8817;
+}
+.hero__link:focus {
+  color: white;
+}
+.hero__link:disabled {
+  color: #ababab;
+}
 .hero__img-plate {
   width: 225px;
   height: 225px;
@@ -312,8 +321,20 @@ body {
   height: 12px;
   padding-left: 4px;
 }
+.button__icon:focus {
+  fill: white;
+}
 .button--header {
   padding-inline: 36px;
+}
+.button--header:hover {
+  background-color: #0a8817;
+}
+.button--header:focus {
+  color: white;
+}
+.button--header:disabled {
+  background-color: #ababab;
 }
 .button__container {
   display: flex;
@@ -326,8 +347,26 @@ body {
   text-transform: capitalize;
   background-color: transparent;
 }
+.button--hero:hover {
+  border: 2px solid #0a8817;
+}
+.button--hero:focus {
+  color: white;
+}
+.button--hero:disabled {
+  border: 2px solid #ababab;
+}
 .button--how {
   padding-inline: 34px;
+}
+.button--how:hover {
+  background-color: #0a8817;
+}
+.button--how:focus {
+  color: white;
+}
+.button--how:disabled {
+  background-color: #ababab;
 }
 .button__group {
   display: flex;
@@ -339,11 +378,29 @@ body {
   padding-inline: 40px;
   text-transform: capitalize;
 }
+.button__location--fill:hover {
+  background-color: #0a8817;
+}
+.button__location--fill:focus {
+  color: white;
+}
+.button__location--fill:disabled {
+  background-color: #ababab;
+}
 .button__location--clear {
   padding-inline: 55px;
   background-color: transparent;
   text-transform: capitalize;
   border: 2px solid #f8d24e;
+}
+.button__location--clear:hover {
+  border: 2px solid #0a8817;
+}
+.button__location--clear:focus {
+  color: white;
+}
+.button__location--clear:disabled {
+  border: 2px solid #ababab;
 }
 
 .products {
@@ -413,13 +470,16 @@ body {
   transform: translateX(-50%);
 }
 .products__img-wrapper--green {
-  background-color: black;
+  background-color: #d9d9d9, rgba(156, 190, 143, 0.7);
+  box-shadow: 0 8px 30px 0 rgba(10, 136, 23, 0.25);
 }
 .products__img-wrapper--yellow {
   background-color: #d9d9d9, rgba(248, 210, 78, 0.7);
+  box-shadow: 0 8px 30px 0 rgba(153, 114, 23, 0.25);
 }
 .products__img-wrapper--orange {
   background-color: #d9d9d9, rgba(213, 117, 63, 0.7);
+  box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.25);
 }
 
 .how {
@@ -656,6 +716,12 @@ body {
   background-color: #f8d24e;
   border-radius: 50px;
   padding: 7px;
+}
+.footer__icon:hover {
+  fill: #fcfcfc;
+}
+.footer__icon:focus {
+  fill: #fcfcfc;
 }
 .footer__contact {
   font-weight: 700;

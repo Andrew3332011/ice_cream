@@ -60,7 +60,7 @@
         background-color: $background_second-color;
         border-radius: 24px;
     }
-
+ 
     &__item--orange {
         background-color: $second_accent-color;
         border-radius: 24px;
@@ -72,7 +72,6 @@
         border-radius: 50%;
         flex-shrink: 0;
         position: absolute; 
-        //3
         top: -150px;
         left: 50%;
         transform: translateX(-50%);
@@ -80,15 +79,17 @@
     
 
     &__img-wrapper--green {
-        background-color: black ;
+        background-color: $wrapper-color ;
+        box-shadow: 0 8px 30px 0 rgba(10, 136, 23, 0.25);
     }
 
     &__img-wrapper--yellow {
         background-color: $wrapper_second-color;
-        
+        box-shadow: 0 8px 30px 0 rgba(153, 114, 23, 0.25);
     }
 
     &__img-wrapper--orange {
         background-color: $wrapper_third-color;
+        box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.25);
     }
 }
