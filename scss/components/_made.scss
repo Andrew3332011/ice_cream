@@ -33,13 +33,11 @@
     background-color: transparent;
     border: none;
     position: absolute;
-    
   }
 
   &__close-icon {
     width: 24px;
     height: 24px;
-
   }
 
   &__video {
@@ -56,6 +54,5 @@
     line-height: 1.4;
     color: $title-color;
     text-align: center;
-    
   }
 }
