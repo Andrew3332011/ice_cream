@@ -585,6 +585,9 @@ body {
   text-align: center;
   padding-top: 32px;
 }
+.slider .swiper-pagination {
+  padding-top: 20px;
+}
 
 .location {
   top: -128px;
@@ -807,6 +810,109 @@ body {
   text-align: center;
   color: #131313;
   font-family: "Seymour One", sans-serif;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.buy {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 568px;
+  max-height: 644px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding: 32px 54px;
+}
+.buy__close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+}
+.buy__close-icon {
+  width: 24px;
+  height: 24px;
+}
+.buy__list {
+  display: flex;
+  gap: 32px;
+}
+.buy__image {
+  width: 132px;
+  height: 132px;
+}
+.buy__name {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #131313;
+  padding-bottom: 20px;
+  padding-inline: 16px;
+}
+.buy__item {
+  border-radius: 15px;
+}
+.buy__item--green {
+  border: 2px solid #96af8c;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 568px;
+  max-height: 996px;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+}
+.info__close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+}
+.info__close-icon {
+  width: 24px;
+  height: 24px;
 }
 
 .backdrop {

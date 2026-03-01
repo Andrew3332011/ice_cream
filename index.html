@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
 
 <body>
@@ -87,7 +89,7 @@
                         passion
                     </h1>
                     <div class="button__container">
-                        <button class="button button--hero">products</button>
+                        <button data-modal-open class="button button--hero">products</button>
                         <a class="hero__link" href="">How it's made?</a>
                     </div>
                     <div class="hero__wrapper-plate">
@@ -119,7 +121,50 @@
                 </div>
             </div>
         </section>
-
+        <div data-modal="" class="backdrop is-hidden">
+            <div class="info">
+                <button data-modal-close class="made__close">
+                    <svg class="info__close-icon">
+                        <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h3 class="modal__title">Chololate icecream</h3>
+                <img src="./images/content/chocolate-icecream.png" alt="icecream" class="info__img">
+                <ul class="info__list">
+                    <li class="info__item">
+                        <div class="info__number-wrapper">
+                            <p class="info__number">320</p>
+                        </div>
+                        <p class="info__type">kcal</p>
+                    </li>
+                    <li class="info__item">
+                        <div class="info__number-wrapper">
+                            <p class="info__number">4g</p>
+                        </div>
+                        <p class="info__type">protein...</p>
+                    </li>
+                    <li class="info__item">
+                        <div class="info__number-wrapper">
+                            <p class="info__number">8,2g</p>
+                        </div>
+                        <p class="info__type">fats</p>
+                    </li>
+                    <li class="info__item">
+                        <div class="info__number-wrapper">
+                            <p class="info__number">40,4g</p>
+                        </div>
+                        <p class="info__type">carbs</p>
+                    </li>
+                </ul>
+                <h4 class="info__ingredients">Ingredients</h4>
+                <form action="" class="info__form">
+                    <input class="info__input" placeholder="Name" type="text">
+                    <input class="info__input" placeholder="Phone" type="number">
+                    <textarea class="info__textarea" placeholder="Comment" name="" id=""></textarea>
+                    <button class="button button--info">Submit</button>
+                </form>
+            </div>
+        </div>
         <section class="products">
             <div class="container products__container">
                 <h3 class="subtitle subtitle--products">100% natural</h3>
@@ -238,39 +283,49 @@
 
         <section class="slider">
             <div class="container">
-                <ul class="slider__list">
-                    <li class="slider__item">
-                        <img src="./images/content/slider-many_ice-creams.png" alt="ice creams" class="slider__img">
-                        <img src="./images/content/emily.png" alt="pfp" class="slider__pfp">
-                        <p class="slider__text">I love visiting your cafe. You prepare the most delicious ice cream in
-                            Los
-                            Angeles! In addition, you have beautiful serving, cozy atmosphere and polite staff.
-                        </p>
-                        <p class="slider__bio">Emily, Los Angeles</p>
-                    </li>
-                    <li class="slider__item">
-                        <img src="./images/content/slider-cherry_ice-creams.png" alt="cherry ice cream"
-                            class="slider__img">
-                        <img src="./images/content/bryan.png" alt="pfp" class="slider__pfp">
-                        <p class="slider__text">Every day we come to you with friends after classes in college. We love
-                            your
-                            ice cream and casual atmosphere!
-                        </p>
-                        <p class="slider__bio">Bryan, New-York</p>
-                    </li>
-                    <li class="slider__item">
-                        <img src="./images/content/slider-colorful_ice-creams.png" alt="ice creams" class="slider__img">
-                        <img src="./images/content/diana.png" alt="pfp" class="slider__pfp">
-                        <p class="slider__text">Ice cream is my passion! I love your chocolate hazelnut ice cream! And I
-                            really like the excellent service - always served politely and quickly!</p>
-                        <p class="slider__bio">Diana, Chicago</p>
-                    </li>
-                </ul>
-                <ul class="slider__pagination-list">
-                    <li class="slider__pagination-item"><a href="" class="slider__pagination-link"></a></li>
-                    <li class="slider__pagination-item"><a href="" class="slider__pagination-link"></a></li>
-                    <li class="slider__pagination-item"><a href="" class="slider__pagination-link"></a></li>
-                </ul>
+
+                <div class="swiper slider-swiper">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide slider__item">
+                            <img src="./images/content/slider-many_ice-creams.png" alt="ice creams" class="slider__img">
+                            <img src="./images/content/emily.png" alt="pfp" class="slider__pfp">
+                            <p class="slider__text">
+                                I love visiting your cafe. You prepare the most delicious ice cream in Los Angeles!
+                                In addition, you have beautiful serving, cozy atmosphere and polite staff.
+                            </p>
+                            <p class="slider__bio">Emily, Los Angeles</p>
+                        </div>
+
+                        <div class="swiper-slide slider__item">
+                            <img src="./images/content/slider-cherry_ice-creams.png" alt="cherry ice cream"
+                                class="slider__img">
+                            <img src="./images/content/bryan.png" alt="pfp" class="slider__pfp">
+                            <p class="slider__text">
+                                Every day we come to you with friends after classes in college.
+                                We love your ice cream and casual atmosphere!
+                            </p>
+                            <p class="slider__bio">Bryan, New York</p>
+                        </div>
+
+                        <div class="swiper-slide slider__item">
+                            <img src="./images/content/slider-colorful_ice-creams.png" alt="ice creams"
+                                class="slider__img">
+                            <img src="./images/content/diana.png" alt="pfp" class="slider__pfp">
+                            <p class="slider__text">
+                                Ice cream is my passion! I love your chocolate hazelnut ice cream!
+                                And I really like the excellent service.
+                            </p>
+                            <p class="slider__bio">Diana, Chicago</p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
+
             </div>
         </section>
 
@@ -337,15 +392,51 @@
                     </li>
                 </ul>
                 <div class="button__group">
-                    <button class="button button__location--fill">our locations <svg class="button__icon">
+                    <button data-modal-open class="button button__location--fill">our locations <svg
+                            class="button__icon">
                             <use href="./images/icons/symbol-defs.svg#icon-button-arrow">
                         </svg></button>
-                    <button class="button button__location--clear">franchise <svg class="button__icon">
+                    <button data-modal-open="" class="button button__location--clear">franchise <svg
+                            class="button__icon">
                             <use href="./images/icons/symbol-defs.svg#icon-button-arrow">
                         </svg></button>
                 </div>
             </div>
         </section>
+        <div data-modal class="backdrop is-hidden">
+            <div class="map">
+                <button data-modal-close class="map__close">
+                    <svg class="map__close-icon">
+                        <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h3 class="modal__title">How it’s made?</h3>
+                <img src="./images/content/map.png" alt="map" class="map__img">
+                <button class="button button__map">Open map</button>
+            </div>
+        </div>
+
+        <div data-modal class="backdrop is-hidden">
+            <div class="franchise ">
+                <button data-modal-close class="franchise__close">
+                    <svg class="franchise__close-icon">
+                        <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h3 class="modal__title">Thank you for your interest in owning an Ice Cream shop</h3>
+                <p class="franchise__text">Due to the overwhelming volume of franchise requests we are not accepting new
+                    franchisee applications at this time. Once the application process resumes, we will contact you for
+                    further information. Please fill out the contact information below and we will reach out for
+                    additional information. We appreciate your patience.</p>
+                <form action="" class="franchise__form">
+                    <input placeholder="Name" type="text" class="franchise__input">
+                    <input placeholder="Phone" type="number" class="franchise__input">
+                    <input placeholder="Email" type="email" class="franchise__input">
+                    <textarea class="franchise__textarea" placeholder="Comment" name="" id=""></textarea>
+                    <button class="button button--franshise">Submit</button>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer class="footer">
@@ -384,6 +475,24 @@
     </footer>
 
     <script src="./js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        const swiper = new Swiper('.slider-swiper', {
+            direction: 'horizontal',
+            slidesPerView: 1,
+            speed: 800,
+            
+            mousewheel: {
+                forceToAxis: true,
+                releaseOnEdges: true,
+                sensitivity: 1,
+                mousewheel: true,
+            },
+
+            grabCursor: false
+        });
+    </script>
 </body>
 
 </html>
