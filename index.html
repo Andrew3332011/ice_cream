@@ -32,7 +32,7 @@
                 </ul>
             </nav>
 
-            <button data-modal-open class="button button--header">
+            <button data-open-modal class="button button--header">
                 Buy now
                 <svg class="button__icon">
                     <use href="./images/icons/symbol-defs.svg#icon-button-arrow">
@@ -41,9 +41,9 @@
         </div>
     </header>
 
-    <div data-modal class="backdrop is-hidden">
+    <div data-modal class="modal-backdrop is-hidden">
         <div class="buy">
-            <button data-modal-close class="buy__close">
+            <button data-close-modal class="buy__close">
                 <svg class="buy__close-icon">
                     <use href="./images/icons/symbol-defs.svg#icon-close"></use>
                 </svg>
@@ -89,7 +89,7 @@
                         passion
                     </h1>
                     <div class="button__container">
-                        <button data-modal-open class="button button--hero">products</button>
+                        <button data-open-modal class="button button--hero">products</button>
                         <a class="hero__link" href="">How it's made?</a>
                     </div>
                     <div class="hero__wrapper-plate">
@@ -120,51 +120,48 @@
                     </ul>
                 </div>
             </div>
-        </section>
-        <div data-modal="" class="backdrop is-hidden">
-            <div class="info">
-                <button data-modal-close class="made__close">
-                    <svg class="info__close-icon">
+            <div data-modal class="modal-backdrop is-hidden">
+            <div class="modal modal--info">
+                <button data-close-modal class="modal__close">
+                    <svg class="modal__close-icon">
                         <use href="./images/icons/symbol-defs.svg#icon-close"></use>
                     </svg>
                 </button>
                 <h3 class="modal__title">Chololate icecream</h3>
                 <img src="./images/content/chocolate-icecream.png" alt="icecream" class="info__img">
-                <ul class="info__list">
-                    <li class="info__item">
-                        <div class="info__number-wrapper">
-                            <p class="info__number">320</p>
-                        </div>
-                        <p class="info__type">kcal</p>
+                <ul class="modal__hero-list">
+                    <li class="modal__hero-item">
+                        
+                         <p class="modal__hero-number">320</p>
+                        
+                        <p class="modal__hero-type">kcal</p>
                     </li>
-                    <li class="info__item">
-                        <div class="info__number-wrapper">
-                            <p class="info__number">4g</p>
-                        </div>
-                        <p class="info__type">protein...</p>
+                    <li class="modal__hero-item">
+                            <p class="modal__hero-number">4g</p>
+                        <p class="modal__hero-type">protein...</p>
                     </li>
-                    <li class="info__item">
-                        <div class="info__number-wrapper">
-                            <p class="info__number">8,2g</p>
-                        </div>
-                        <p class="info__type">fats</p>
+                    <li class="modal__hero-item">
+                            <p class="modal__hero-number">8,2g</p>
+                        
+                        <p class="modal__hero-type">fats</p>
                     </li>
-                    <li class="info__item">
-                        <div class="info__number-wrapper">
-                            <p class="info__number">40,4g</p>
-                        </div>
-                        <p class="info__type">carbs</p>
+                    <li class="modal__hero-item">
+                        
+                            <p class="modal__hero-number">40,4g</p>
+                        
+                        <p class="modal__hero-type">carbs</p>
                     </li>
                 </ul>
-                <h4 class="info__ingredients">Ingredients</h4>
-                <form action="" class="info__form">
-                    <input class="info__input" placeholder="Name" type="text">
-                    <input class="info__input" placeholder="Phone" type="number">
-                    <textarea class="info__textarea" placeholder="Comment" name="" id=""></textarea>
+                <h4 class="modal__hero-ingredients">Ingredients</h4>
+                <form action="" class="modal__form">
+                    <input class="modal__input" placeholder="Name" type="text">
+                    <input class="modal__input" placeholder="Phone" type="number">
+                    <textarea class="modal__textarea" placeholder="Comment" name="" id=""></textarea>
                     <button class="button button--info">Submit</button>
                 </form>
             </div>
         </div>
+        </section>
         <section class="products">
             <div class="container products__container">
                 <h3 class="subtitle subtitle--products">100% natural</h3>

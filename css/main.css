@@ -585,8 +585,9 @@ body {
   text-align: center;
   padding-top: 32px;
 }
-.slider .swiper-pagination {
-  padding-top: 20px;
+.slider__item {
+  position: absolute;
+  bottom: 98px;
 }
 
 .location {
@@ -750,24 +751,6 @@ body {
   text-align: center;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.no-scroll {
-  overflow: hidden;
-}
-
 .made {
   position: absolute;
   top: 50%;
@@ -779,6 +762,7 @@ body {
   border: 2px solid #f8d24e;
   border-radius: 10px;
   padding: 32px 60px;
+  display: none;
 }
 .made__close {
   background-color: transparent;
@@ -812,24 +796,6 @@ body {
   font-family: "Seymour One", sans-serif;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.no-scroll {
-  overflow: hidden;
-}
-
 .buy {
   position: absolute;
   top: 50%;
@@ -874,24 +840,6 @@ body {
 }
 .buy__item--green {
   border: 2px solid #96af8c;
-}
-
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.no-scroll {
-  overflow: hidden;
 }
 
 .info {
@@ -915,24 +863,6 @@ body {
   height: 24px;
 }
 
-.backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  opacity: 1;
-}
-.backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-}
-
-.no-scroll {
-  overflow: hidden;
-}
-
 .buy {
   position: absolute;
   top: 50%;
@@ -977,4 +907,31 @@ body {
 }
 .buy__item--green {
   border: 2px solid #96af8c;
+}
+
+.modal {
+  max-width: 568px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 2px solid #f8d24e;
+  border-radius: 10px;
+  padding-block: 32px;
+}
+.modal__form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.modal__input {
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  background-color: rgba(248, 210, 78, 0.1);
+  padding-block: 11px;
+}
+.modal__input::placeholder {
+  line-height: 1.4;
+  color: #131313;
 }

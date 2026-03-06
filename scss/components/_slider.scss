@@ -36,7 +36,9 @@
         padding-top: 32px;
     }
 
-    .swiper-pagination {
-    padding-top: 20px;
-  }
+    &__item {
+        position: absolute;
+        bottom: 98px;
+        
+    }
 }
