@@ -39,45 +39,46 @@
                 </svg>
             </button>
         </div>
-    </header>
-
-    <div data-modal class="modal-backdrop is-hidden">
-        <div class="buy">
-            <button data-close-modal class="buy__close">
-                <svg class="buy__close-icon">
+         <div data-modal class="modal-backdrop is-hidden">
+        <div class="modal">
+            <button data-close-modal class="modal__close">
+                <svg class="modal__close-icon">
                     <use href="./images/icons/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
             <h3 class="modal__title">Buy now</h3>
-            <ul class="buy__list">
-                <li class="buy__item buy__item--green">
-                    <div class="buy__img-wrapper buy__img-wrapper--green">
-                        <img src="./images/content/ice-cream.png" alt="ice cream" class="buy__image">
+            <ul class="modal__buy-ist">
+                <li class="modal__buyiitem modal__buy-item--green">
+                    <div class="modal__buy-wrapper modal__buy-wrapper--green">
+                        <img src="./images/content/ice-cream.png" alt="ice cream" class="modal__buy-image">
                     </div>
-                    <h3 class="buy__name">ice cream</h3>
+                    <h3 class="modal__buy-name">ice cream</h3>
                 </li>
-                <li class="buy__item buy__item--yellow">
-                    <div class="buy__img-wrapper buy__img-wrapper--yellow">
-                        <img src="./images/content/ice-coffee.png" alt="ice coffee" class="buy__image">
+                <li class="modal__buy-item buy__item--yellow">
+                    <div class="modal__buy-wrapper modal__buy-wrapper--yellow">
+                        <img src="./images/content/ice-coffee.png" alt="ice coffee" class="modal__buy-image">
                     </div>
-                    <h3 class="buy__name">ice coffee</h3>
+                    <h3 class="modal__buy-name">ice coffee</h3>
                 </li>
-                <li class="buy__item buy__item--orange">
-                    <div class="buy__img-wrapper buy__img-wrapper--orange">
-                        <img src="./images/content/milkshake.png" alt="milkshake" class="buy__image">
+                <li class="modal__buy-item modal__buy-item--orange">
+                    <div class="modal__buy-wrapper modal__buy-wrapper--orange">
+                        <img src="./images/content/milkshake.png" alt="milkshake" class="modal__buy-image">
                     </div>
-                    <h3 class="buy__name">milkshake</h3>
+                    <h3 class="modal__buy-name">milkshake</h3>
                 </li>
             </ul>
-            <form action="" class="buy__form">
-                <input type="text" class="buy__input" placeholder="Name">
-                <input type="number" class="buy__input" placeholder="Phone">
-                <textarea class="buy__comment" name="" id="" placeholder="Comment"></textarea>
+            <form action="" class="modal__form">
+                <input type="text" class="modal__input" placeholder="Name">
+                <input type="number" class="modal__input" placeholder="Phone">
+                <textarea class="modal__textarea" name="" id="" placeholder="Comment"></textarea>
 
-                <button class="button button-buy">Submit</button>
+                <button class="button button--modal">Submit</button>
             </form>
         </div>
     </div>
+    </header>
+
+   
 
     <main>
         <section class="hero">
@@ -121,46 +122,72 @@
                 </div>
             </div>
             <div data-modal class="modal-backdrop is-hidden">
-            <div class="modal modal--info">
-                <button data-close-modal class="modal__close">
-                    <svg class="modal__close-icon">
-                        <use href="./images/icons/symbol-defs.svg#icon-close"></use>
-                    </svg>
-                </button>
-                <h3 class="modal__title">Chololate icecream</h3>
-                <img src="./images/content/chocolate-icecream.png" alt="icecream" class="info__img">
-                <ul class="modal__hero-list">
-                    <li class="modal__hero-item">
-                        
-                         <p class="modal__hero-number">320</p>
-                        
-                        <p class="modal__hero-type">kcal</p>
-                    </li>
-                    <li class="modal__hero-item">
+                <div class="modal modal--hero">
+                    <button data-close-modal class="modal__close">
+                        <svg class="modal__close-icon">
+                            <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <h3 class="modal__title">Chololate icecream</h3>
+                    <img src="./images/content/chocolate-icecream.png" alt="icecream" class="modal__hero-img">
+                    <ul class="modal__hero-list">
+                        <li class="modal__hero-item">
+
+                            <p class="modal__hero-number">320</p>
+
+                            <p class="modal__hero-type">kcal</p>
+                        </li>
+                        <li class="modal__hero-item">
                             <p class="modal__hero-number">4g</p>
-                        <p class="modal__hero-type">protein...</p>
-                    </li>
-                    <li class="modal__hero-item">
+                            <p class="modal__hero-type">protein...</p>
+                        </li>
+                        <li class="modal__hero-item">
                             <p class="modal__hero-number">8,2g</p>
-                        
-                        <p class="modal__hero-type">fats</p>
-                    </li>
-                    <li class="modal__hero-item">
-                        
+
+                            <p class="modal__hero-type">fats</p>
+                        </li>
+                        <li class="modal__hero-item">
+
                             <p class="modal__hero-number">40,4g</p>
-                        
-                        <p class="modal__hero-type">carbs</p>
-                    </li>
-                </ul>
-                <h4 class="modal__hero-ingredients">Ingredients</h4>
-                <form action="" class="modal__form">
-                    <input class="modal__input" placeholder="Name" type="text">
-                    <input class="modal__input" placeholder="Phone" type="number">
-                    <textarea class="modal__textarea" placeholder="Comment" name="" id=""></textarea>
-                    <button class="button button--info">Submit</button>
-                </form>
+
+                            <p class="modal__hero-type">carbs</p>
+                        </li>
+                    </ul>
+                    <h4 class="modal__hero-ingredients">Ingredients</h4>
+                    <ul class="modal__hero-amount">
+                        <li class="modal__hero-made">
+                            <p class="modal__hero-info">Milk</p>
+                            <p class="modal__hero-info">100ml</p>
+                        </li>
+                        <li class="modal__hero-made">
+                            <p class="modal__hero-info">Belgian chocolate</p>
+                            <p class="modal__hero-info">20g</p>
+                        </li>
+                        <li class="modal__hero-made">
+                            <p class="modal__hero-info">Cream</p>
+                            <p class="modal__hero-info">150ml</p>
+                        </li>
+                        <li class="modal__hero-made">
+                            <p class="modal__hero-info">Cocoa powder</p>
+                            <p class="modal__hero-info">30g</p>
+                        </li>
+                        <li class="modal__hero-made">
+                            <p class="modal__hero-info">Sugar</p>
+                            <p class="modal__hero-info">40g</p>
+                        </li>
+                        <li class="modal__hero-made">
+                            <p class="modal__hero-info">Vanilla sugar</p>
+                            <p class="modal__hero-info">10g</p>
+                        </li>
+                    </ul>
+                    <form action="" class="modal__form">
+                        <input class="modal__input" placeholder="Name" type="text">
+                        <input class="modal__input" placeholder="Phone" type="number">
+                        <textarea class="modal__textarea" placeholder="Comment" name="" id=""></textarea>
+                        <button class="button button--modal button__hero--info">Submit</button>
+                    </form>
+                </div>
             </div>
-        </div>
         </section>
         <section class="products">
             <div class="container products__container">
@@ -209,6 +236,7 @@
                     </li>
                 </ul>
             </div>
+            
         </section>
 
         <section class="how">
@@ -233,7 +261,7 @@
                             15 types
                             of coffee and 23 milkshakes.
                             This is enough to choose ice cream and coffee for any mood!</p>
-                        <button data-modal-open class="button button--how">Read more <svg class="button__icon">
+                        <button data-open-modal class="button button--how">Read more <svg class="button__icon">
                                 <use href="./images/icons/symbol-defs.svg#icon-button-arrow">
                             </svg></button>
                     </div>
@@ -259,24 +287,25 @@
                     </li>
                 </ul>
             </div>
-        </section>
-
-        <div data-modal class="backdrop is-hidden">
-            <div class="made">
-                <button data-modal-close class="made__close">
-                    <svg class="made__close-icon">
+              <div data-modal class="backdrop is-hidden">
+            <div class="modal modal--how">
+                <button data-close-modal class="modal__close">
+                    <svg class="modal__close-icon">
                         <use href="./images/icons/symbol-defs.svg#icon-close"></use>
                     </svg>
                 </button>
                 <h3 class="modal__title">How it’s made?</h3>
-                <video class="made__video">
-                    <source src="./images/content/ice-cream_vid.mp4" type="video/mp4">
-                </video>
-                <p class="made__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                <div class="modal__how-video"><svg class="modal__how-play"><use href="./images/icons/symbol-defs.svg#icon-play">
+                    </use>
+                </svg></div>
+                <p class="modal__how-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                     incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
                     tempor incididunt ut labore et</p>
             </div>
         </div>
+        </section>
+
+      
 
         <section class="slider">
             <div class="container">
@@ -324,6 +353,7 @@
                 </div>
 
             </div>
+            
         </section>
 
         <section class="location">
@@ -389,51 +419,54 @@
                     </li>
                 </ul>
                 <div class="button__group">
-                    <button data-modal-open class="button button__location--fill">our locations <svg
+                    <button data-open-modal class="button button__location--fill">our locations <svg
                             class="button__icon">
                             <use href="./images/icons/symbol-defs.svg#icon-button-arrow">
                         </svg></button>
-                    <button data-modal-open="" class="button button__location--clear">franchise <svg
+                    <button data-open-modal class="button button__location--clear">franchise <svg
                             class="button__icon">
                             <use href="./images/icons/symbol-defs.svg#icon-button-arrow">
                         </svg></button>
                 </div>
             </div>
-        </section>
+            <div data-modal class="backdrop is-hidden">
+            <div class="modal--franchise modal ">
+                <button data-close-modal class="modal__close">
+                    <svg class="modal__close-icon">
+                        <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h3 class="modal__title modal__title--franchise">Thank you for your interest in owning an Ice Cream shop</h3>
+                <p class="modal__franchise-text">Due to the overwhelming volume of franchise requests we are not accepting new
+                    franchisee applications at this time. Once the application process resumes, we will contact you for
+                    further information. Please fill out the contact information below and we will reach out for
+                    additional information. We appreciate your patience.</p>
+                <form action="" class="modal__form">
+                    <input placeholder="Name" type="text" class="modal__input">
+                    <input placeholder="Phone" type="number" class="modal__input">
+                    <input placeholder="Email" type="email" class="modal__input">
+                    <textarea class="modal__textarea" placeholder="Comment" name="" id=""></textarea>
+                    <button class="button button--modal">Submit</button>
+                
+                </form>
+            </div>
+        </div>
         <div data-modal class="backdrop is-hidden">
-            <div class="map">
-                <button data-modal-close class="map__close">
-                    <svg class="map__close-icon">
+            <div class="modal modal--location">
+                <button data-close-modal class="modal__close">
+                    <svg class="modal__close-icon">
                         <use href="./images/icons/symbol-defs.svg#icon-close"></use>
                     </svg>
                 </button>
                 <h3 class="modal__title">How it’s made?</h3>
-                <img src="./images/content/map.png" alt="map" class="map__img">
-                <button class="button button__map">Open map</button>
+                <img src="./images/content/map.png" alt="map" class="modal__location-img">
+                <button class="button button--modal">Open map</button>
             </div>
         </div>
+        </section>
+        
 
-        <div data-modal class="backdrop is-hidden">
-            <div class="franchise ">
-                <button data-modal-close class="franchise__close">
-                    <svg class="franchise__close-icon">
-                        <use href="./images/icons/symbol-defs.svg#icon-close"></use>
-                    </svg>
-                </button>
-                <h3 class="modal__title">Thank you for your interest in owning an Ice Cream shop</h3>
-                <p class="franchise__text">Due to the overwhelming volume of franchise requests we are not accepting new
-                    franchisee applications at this time. Once the application process resumes, we will contact you for
-                    further information. Please fill out the contact information below and we will reach out for
-                    additional information. We appreciate your patience.</p>
-                <form action="" class="franchise__form">
-                    <input placeholder="Name" type="text" class="franchise__input">
-                    <input placeholder="Phone" type="number" class="franchise__input">
-                    <input placeholder="Email" type="email" class="franchise__input">
-                    <textarea class="franchise__textarea" placeholder="Comment" name="" id=""></textarea>
-                    <button class="button button--franshise">Submit</button>
-                </form>
-            </div>
-        </div>
+        
     </main>
 
     <footer class="footer">
@@ -479,7 +512,7 @@
             direction: 'horizontal',
             slidesPerView: 1,
             speed: 800,
-            
+
             mousewheel: {
                 forceToAxis: true,
                 releaseOnEdges: true,

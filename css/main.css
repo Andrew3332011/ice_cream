@@ -402,6 +402,10 @@ body {
 .button__location--clear:disabled {
   border: 2px solid #ababab;
 }
+.button--modal {
+  padding-inline: 34px;
+  margin: auto;
+}
 
 .products {
   padding-top: 60px;
@@ -751,51 +755,6 @@ body {
   text-align: center;
 }
 
-.made {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 568px;
-  min-height: 449px;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  padding: 32px 60px;
-  display: none;
-}
-.made__close {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-}
-.made__close-icon {
-  width: 24px;
-  height: 24px;
-}
-.made__video {
-  display: block;
-  margin: auto;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  min-width: 448px;
-  height: 205px;
-}
-.made__text {
-  font-size: 16px;
-  line-height: 1.4;
-  color: #131313;
-  text-align: center;
-}
-
-.modal__title {
-  font-size: 20px;
-  line-height: 1.4;
-  text-align: center;
-  color: #131313;
-  font-family: "Seymour One", sans-serif;
-}
-
 .buy {
   position: absolute;
   top: 50%;
@@ -909,8 +868,26 @@ body {
   border: 2px solid #96af8c;
 }
 
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
 .modal {
-  max-width: 568px;
+  min-width: 568px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -920,18 +897,171 @@ body {
   border-radius: 10px;
   padding-block: 32px;
 }
+.modal--hero {
+  min-height: 996px;
+}
+.modal--franchise {
+  min-height: 668px;
+  max-width: 568px;
+}
+.modal--location {
+  min-height: 458px;
+}
+.modal--how {
+  min-height: 449px;
+  max-width: 568px;
+}
+.modal__title {
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #131313;
+  font-family: "Seymour One", sans-serif;
+}
 .modal__form {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  padding-top: 48px;
+  align-items: center;
 }
 .modal__input {
   border: 1px solid #84a178;
   border-radius: 10px;
   background-color: rgba(248, 210, 78, 0.1);
   padding-block: 11px;
+  padding-inline: 16px;
+  width: 368px;
 }
 .modal__input::placeholder {
   line-height: 1.4;
   color: #131313;
+}
+.modal__textarea {
+  border: 1px solid #84a178;
+  border-radius: 10px;
+  background-color: rgba(248, 210, 78, 0.1);
+  padding-top: 11px;
+  padding-inline: 16px;
+  width: 368px;
+  height: 84px;
+  resize: none;
+}
+.modal__textarea::placeholder {
+  line-height: 1.4;
+  color: #131313;
+  font-size: 14px;
+}
+.modal__hero-list {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 24px;
+}
+.modal__close {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+.modal__close-icon {
+  width: 13.33px;
+  height: 13.37px;
+}
+.modal__hero-item {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  border: 2px solid #84a178;
+  border-radius: 40px;
+  width: 65px;
+}
+.modal__hero-number {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.33;
+  text-align: center;
+  color: #131313;
+  background-color: #84a178;
+  padding: 12px;
+  border-radius: 100%;
+  box-shadow: 0 6px 20px 0 rgba(10, 136, 23, 0.25);
+  margin-inline: 6px;
+}
+.modal__hero-type {
+  font-size: 12px;
+  text-align: center;
+  color: #131313;
+  padding-bottom: 14px;
+  text-transform: capitalize;
+}
+.modal__hero-img {
+  margin: auto;
+  display: block;
+  padding-top: 24px;
+}
+.modal__hero-ingredients {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  color: #131313;
+  padding-top: 48px;
+}
+.modal__hero-info {
+  color: #131313;
+  line-height: 1.76;
+  letter-spacing: 0.04em;
+}
+.modal__hero-amount {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  padding-inline: 40px;
+}
+.modal__hero-made {
+  display: flex;
+  justify-content: space-between;
+}
+.modal__franchise-text {
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.4;
+  color: #131313;
+  padding-inline: 60px;
+  padding-top: 24px;
+}
+.modal__title--franchise {
+  padding-inline: 123px;
+}
+.modal__location-img {
+  margin: auto;
+  display: block;
+  padding-block: 32px;
+}
+.modal__how-video {
+  display: block;
+  margin: auto;
+  width: 448px;
+  height: 205px;
+  background-color: #131313;
+  border-radius: 10px;
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal__how-text {
+  font-size: 16px;
+  line-height: 1.4;
+  color: #131313;
+  text-align: center;
+  padding-top: 32px;
+  padding-inline: 60px;
+}
+.modal__how-play {
+  fill: white;
+  width: 36px;
+  height: 36px;
 }

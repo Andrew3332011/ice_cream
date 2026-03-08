@@ -114,4 +114,11 @@
             border: 2px solid $disabled-color;
         }
     }
+
+    &--modal {
+        padding-inline: 34px;
+        margin: auto;
+    }
+
+    
 }
