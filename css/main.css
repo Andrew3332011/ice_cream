@@ -148,6 +148,7 @@ button {
 
 .container {
   max-width: 1200px;
+  min-width: 320px;
   margin: 0px auto;
   padding-inline: 15px;
 }
@@ -184,6 +185,26 @@ body {
 }
 .header__nav-link:hover {
   color: #f8d24e;
+}
+.header__input {
+  display: none;
+}
+@media (max-width: 768px) {
+  .header__label {
+    display: block;
+    height: 32px;
+    width: 32px;
+    position: relative;
+  }
+  .header__label .header__btn {
+    top: 10px;
+  }
+  .header__label .header__btn::before {
+    top: -8px;
+  }
+  .header__label .header__btn::after {
+    top: 8px;
+  }
 }
 
 .hero {
@@ -469,20 +490,20 @@ body {
   border-radius: 50%;
   flex-shrink: 0;
   position: absolute;
-  top: -150px;
+  top: -167px;
   left: 50%;
   transform: translateX(-50%);
 }
 .products__img-wrapper--green {
-  background-color: #d9d9d9, rgba(156, 190, 143, 0.7);
+  background-color: rgba(156, 190, 143, 0.7);
   box-shadow: 0 8px 30px 0 rgba(10, 136, 23, 0.25);
 }
 .products__img-wrapper--yellow {
-  background-color: #d9d9d9, rgba(248, 210, 78, 0.7);
+  background-color: rgba(248, 210, 78, 0.7);
   box-shadow: 0 8px 30px 0 rgba(153, 114, 23, 0.25);
 }
 .products__img-wrapper--orange {
-  background-color: #d9d9d9, rgba(213, 117, 63, 0.7);
+  background-color: rgba(213, 117, 63, 0.7);
   box-shadow: 0 8px 30px 0 rgba(0, 0, 0, 0.25);
 }
 
@@ -558,6 +579,7 @@ body {
   background-image: url(../images/bg/ice-creams_bg.png);
   background-color: white;
   padding-bottom: 228px;
+  position: relative;
 }
 .slider__img {
   display: block;
@@ -589,9 +611,8 @@ body {
   text-align: center;
   padding-top: 32px;
 }
-.slider__item {
-  position: absolute;
-  bottom: 98px;
+.slider-swiper {
+  transform: translateY(-98px);
 }
 
 .location {
@@ -755,52 +776,6 @@ body {
   text-align: center;
 }
 
-.buy {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 568px;
-  max-height: 644px;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  padding: 32px 54px;
-}
-.buy__close {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-}
-.buy__close-icon {
-  width: 24px;
-  height: 24px;
-}
-.buy__list {
-  display: flex;
-  gap: 32px;
-}
-.buy__image {
-  width: 132px;
-  height: 132px;
-}
-.buy__name {
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #131313;
-  padding-bottom: 20px;
-  padding-inline: 16px;
-}
-.buy__item {
-  border-radius: 15px;
-}
-.buy__item--green {
-  border: 2px solid #96af8c;
-}
-
 .info {
   position: absolute;
   top: 50%;
@@ -822,52 +797,6 @@ body {
   height: 24px;
 }
 
-.buy {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  max-width: 568px;
-  max-height: 644px;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  border: 2px solid #f8d24e;
-  border-radius: 10px;
-  padding: 32px 54px;
-}
-.buy__close {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-}
-.buy__close-icon {
-  width: 24px;
-  height: 24px;
-}
-.buy__list {
-  display: flex;
-  gap: 32px;
-}
-.buy__image {
-  width: 132px;
-  height: 132px;
-}
-.buy__name {
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #131313;
-  padding-bottom: 20px;
-  padding-inline: 16px;
-}
-.buy__item {
-  border-radius: 15px;
-}
-.buy__item--green {
-  border: 2px solid #96af8c;
-}
-
 .modal {
   min-width: 568px;
   position: absolute;
@@ -878,9 +807,11 @@ body {
   border: 2px solid #f8d24e;
   border-radius: 10px;
   padding-block: 32px;
+  display: none;
 }
 .modal--hero {
   min-height: 996px;
+  display: none;
 }
 .modal--franchise {
   min-height: 668px;
@@ -892,6 +823,7 @@ body {
 .modal--how {
   min-height: 449px;
   max-width: 568px;
+  display: none;
 }
 .modal__title {
   font-size: 20px;
@@ -1046,4 +978,51 @@ body {
   fill: white;
   width: 36px;
   height: 36px;
+}
+.modal__buy-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  padding-top: 103px;
+}
+.modal__buy-image {
+  width: 132px;
+  height: 132px;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: -50px;
+}
+.modal__buy-name {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #131313;
+  padding-bottom: 20px;
+  padding-inline: 16px;
+}
+.modal__buy-item {
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+}
+.modal__buy-item--green {
+  border: 2px solid #96af8c;
+}
+.modal__buy-item--yellow {
+  border: 2px solid #efd478;
+  background-color: #efd478;
+}
+.modal__buy-item--orange {
+  border: 2px solid rgba(213, 117, 63, 0.7);
+}
+.modal__buy-wrapper {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  left: 50%;
+  top: -56px;
 }

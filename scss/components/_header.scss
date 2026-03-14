@@ -31,6 +31,30 @@
             color: $accent-color;
         }
     }
+    &__input {
+        display: none;
 
+    }
+
+    @media (max-width:768px) {
+        &__label {
+            display: block;
+      height: 32px;
+      width: 32px;
+      position: relative;
+        }
+
+        &__label &__btn {
+      top: 10px;
+    }
+
+    &__label &__btn::before {
+      top: -8px;
+    }
+
+    &__label &__btn::after {
+      top: 8px;
+    }
+    }
 
 }

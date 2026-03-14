@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice Cream</title>
     <link rel="website icon" href="./images/icons/favicon.jpg">
+    
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,6 +26,8 @@
 
             <nav class="header__nav">
                 <ul class="header__nav-list">
+                    <input class="header__input" id="toggle" type="checkbox">
+          <label class="header__label" for="toggle"><span class="header__btn"></span></label>
                     <li class="header__nav-item"><a href="" class="header__nav-link">Home</a></li>
                     <li class="header__nav-item"><a href="" class="header__nav-link">How it’s made?</a></li>
                     <li class="header__nav-item"><a href="" class="header__nav-link">Our products</a></li>
@@ -47,24 +50,27 @@
                 </svg>
             </button>
             <h3 class="modal__title">Buy now</h3>
-            <ul class="modal__buy-ist">
-                <li class="modal__buyiitem modal__buy-item--green">
+            <ul class="modal__buy-list">
+                <li  class="modal__buy-item modal__buy-item--green"><a href="" class="modal__buy-link modal__buy-link--green">
                     <div class="modal__buy-wrapper modal__buy-wrapper--green">
                         <img src="./images/content/ice-cream.png" alt="ice cream" class="modal__buy-image">
                     </div>
                     <h3 class="modal__buy-name">ice cream</h3>
+                    </a>
                 </li>
-                <li class="modal__buy-item buy__item--yellow">
+                <li class="modal__buy-item modal__buy-item--yellow"><a href="" class="modal__buy-link modal__buy-link--yellow">
                     <div class="modal__buy-wrapper modal__buy-wrapper--yellow">
                         <img src="./images/content/ice-coffee.png" alt="ice coffee" class="modal__buy-image">
                     </div>
                     <h3 class="modal__buy-name">ice coffee</h3>
+                    </a>
                 </li>
-                <li class="modal__buy-item modal__buy-item--orange">
+                <li class="modal__buy-item modal__buy-item--orange"> <a href="" class="modal__buy-link modal__buy-link--orange">
                     <div class="modal__buy-wrapper modal__buy-wrapper--orange">
                         <img src="./images/content/milkshake.png" alt="milkshake" class="modal__buy-image">
                     </div>
                     <h3 class="modal__buy-name">milkshake</h3>
+                    </a>
                 </li>
             </ul>
             <form action="" class="modal__form">
@@ -311,9 +317,9 @@
             <div class="container">
 
                 <div class="swiper slider-swiper">
-                    <div class="swiper-wrapper">
+                    <ul class="swiper-wrapper slider__wrapper">
 
-                        <div class="swiper-slide slider__item">
+                        <li class="swiper-slide slider__item">
                             <img src="./images/content/slider-many_ice-creams.png" alt="ice creams" class="slider__img">
                             <img src="./images/content/emily.png" alt="pfp" class="slider__pfp">
                             <p class="slider__text">
@@ -321,9 +327,9 @@
                                 In addition, you have beautiful serving, cozy atmosphere and polite staff.
                             </p>
                             <p class="slider__bio">Emily, Los Angeles</p>
-                        </div>
+                        </li>
 
-                        <div class="swiper-slide slider__item">
+                        <li class="swiper-slide slider__item">
                             <img src="./images/content/slider-cherry_ice-creams.png" alt="cherry ice cream"
                                 class="slider__img">
                             <img src="./images/content/bryan.png" alt="pfp" class="slider__pfp">
@@ -332,9 +338,9 @@
                                 We love your ice cream and casual atmosphere!
                             </p>
                             <p class="slider__bio">Bryan, New York</p>
-                        </div>
+                        </li>
 
-                        <div class="swiper-slide slider__item">
+                        <li class="swiper-slide slider__item">
                             <img src="./images/content/slider-colorful_ice-creams.png" alt="ice creams"
                                 class="slider__img">
                             <img src="./images/content/diana.png" alt="pfp" class="slider__pfp">
@@ -343,9 +349,9 @@
                                 And I really like the excellent service.
                             </p>
                             <p class="slider__bio">Diana, Chicago</p>
-                        </div>
+                        </li>
 
-                    </div>
+                    </ul>
 
 
                     <div class="swiper-pagination"></div>

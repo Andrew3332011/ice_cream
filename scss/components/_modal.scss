@@ -28,9 +28,11 @@
   border: 2px solid $accent-color;
   border-radius: 10px;
   padding-block: 32px;
+  display: none;
 
   &--hero {
     min-height: 996px;
+    display: none;
   }
 
   &--franchise {
@@ -45,6 +47,7 @@
   &--how {
     min-height: 449px;
     max-width: 568px;
+    display: none;
   }
 
   &__title {
@@ -103,9 +106,8 @@
     background-color: transparent;
     border: none;
     position: absolute;
-  right: 12px;
-  top: 12px;
-    
+    right: 12px;
+    top: 12px;
   }
 
   &__close-icon {
@@ -206,7 +208,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
   }
 
   &__how-text {
@@ -222,6 +223,65 @@
     fill: $third_accent-color;
     width: 36px;
     height: 36px;
-  
   }
+
+  &__buy-list {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    padding-top: 103px;
+  }
+
+  &__buy-image {
+    width: 132px;
+    height: 132px;
+    margin: auto;
+    display: block; 
+    position: relative;
+    top: -50px;
+  }
+
+  &__buy-name {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $title-color;
+    padding-bottom: 20px;
+    padding-inline: 16px;
+  }
+
+  &__buy-item {
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+  }
+
+  &__buy-item--green {
+    border: 2px solid $modal_border-color;
+    
+  }
+
+  &__buy-item--yellow {
+    border: 2px solid $background_second-color;
+    background-color: $background_second-color;
+    
+  }
+
+  &__buy-item--orange {
+    border: 2px solid $wrapper_third-color;
+    
+  }
+
+  &__buy-wrapper {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    flex-shrink: 0;
+   left: 50%;
+    top: -56px;
+    
+  }
+  
 }

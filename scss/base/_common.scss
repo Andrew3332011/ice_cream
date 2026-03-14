@@ -1,5 +1,6 @@
 .container {
     max-width: 1200px;
+    min-width: 320px;
     margin: 0px auto;
     padding-inline: 15px;
 }
@@ -7,5 +8,4 @@
 body {
     background-color: $background-color;
     font-family: $main-font;
-    
 }
