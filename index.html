@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ice Cream</title>
     <link rel="website icon" href="./images/icons/favicon.jpg">
-    
+
     <link rel="stylesheet" href="./css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,9 +25,9 @@
                 </svg></a>
 
             <nav class="header__nav">
+             
                 <ul class="header__nav-list">
-                    <input class="header__input" id="toggle" type="checkbox">
-          <label class="header__label" for="toggle"><span class="header__btn"></span></label>
+                    
                     <li class="header__nav-item"><a href="" class="header__nav-link">Home</a></li>
                     <li class="header__nav-item"><a href="" class="header__nav-link">How it’s made?</a></li>
                     <li class="header__nav-item"><a href="" class="header__nav-link">Our products</a></li>
@@ -42,49 +42,52 @@
                 </svg>
             </button>
         </div>
-         <div data-modal class="modal-backdrop is-hidden">
-        <div class="modal">
-            <button data-close-modal class="modal__close">
-                <svg class="modal__close-icon">
-                    <use href="./images/icons/symbol-defs.svg#icon-close"></use>
-                </svg>
-            </button>
-            <h3 class="modal__title">Buy now</h3>
-            <ul class="modal__buy-list">
-                <li  class="modal__buy-item modal__buy-item--green"><a href="" class="modal__buy-link modal__buy-link--green">
-                    <div class="modal__buy-wrapper modal__buy-wrapper--green">
-                        <img src="./images/content/ice-cream.png" alt="ice cream" class="modal__buy-image">
-                    </div>
-                    <h3 class="modal__buy-name">ice cream</h3>
-                    </a>
-                </li>
-                <li class="modal__buy-item modal__buy-item--yellow"><a href="" class="modal__buy-link modal__buy-link--yellow">
-                    <div class="modal__buy-wrapper modal__buy-wrapper--yellow">
-                        <img src="./images/content/ice-coffee.png" alt="ice coffee" class="modal__buy-image">
-                    </div>
-                    <h3 class="modal__buy-name">ice coffee</h3>
-                    </a>
-                </li>
-                <li class="modal__buy-item modal__buy-item--orange"> <a href="" class="modal__buy-link modal__buy-link--orange">
-                    <div class="modal__buy-wrapper modal__buy-wrapper--orange">
-                        <img src="./images/content/milkshake.png" alt="milkshake" class="modal__buy-image">
-                    </div>
-                    <h3 class="modal__buy-name">milkshake</h3>
-                    </a>
-                </li>
-            </ul>
-            <form action="" class="modal__form">
-                <input type="text" class="modal__input" placeholder="Name">
-                <input type="number" class="modal__input" placeholder="Phone">
-                <textarea class="modal__textarea" name="" id="" placeholder="Comment"></textarea>
+        <div data-modal class="modal-backdrop is-hidden">
+            <div class="modal">
+                <button data-close-modal class="modal__close">
+                    <svg class="modal__close-icon">
+                        <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                    </svg>
+                </button>
+                <h3 class="modal__title">Buy now</h3>
+                <ul class="modal__buy-list">
+                    <li class="modal__buy-item modal__buy-item--green"><a href=""
+                            class="modal__buy-link modal__buy-link--green">
+                            <div class="modal__buy-wrapper modal__buy-wrapper--green">
+                                <img src="./images/content/ice-cream.png" alt="ice cream" class="modal__buy-image">
+                            </div>
+                            <h3 class="modal__buy-name">ice cream</h3>
+                        </a>
+                    </li>
+                    <li class="modal__buy-item modal__buy-item--yellow"><a href=""
+                            class="modal__buy-link modal__buy-link--yellow">
+                            <div class="modal__buy-wrapper modal__buy-wrapper--yellow">
+                                <img src="./images/content/ice-coffee.png" alt="ice coffee" class="modal__buy-image">
+                            </div>
+                            <h3 class="modal__buy-name">ice coffee</h3>
+                        </a>
+                    </li>
+                    <li class="modal__buy-item modal__buy-item--orange"> <a href=""
+                            class="modal__buy-link modal__buy-link--orange">
+                            <div class="modal__buy-wrapper modal__buy-wrapper--orange">
+                                <img src="./images/content/milkshake.png" alt="milkshake" class="modal__buy-image">
+                            </div>
+                            <h3 class="modal__buy-name">milkshake</h3>
+                        </a>
+                    </li>
+                </ul>
+                <form action="" class="modal__form">
+                    <input type="text" class="modal__input" placeholder="Name">
+                    <input type="number" class="modal__input" placeholder="Phone">
+                    <textarea class="modal__textarea" name="" id="" placeholder="Comment"></textarea>
 
-                <button class="button button--modal">Submit</button>
-            </form>
+                    <button class="button button--modal">Submit</button>
+                </form>
+            </div>
         </div>
-    </div>
     </header>
 
-   
+
 
     <main>
         <section class="hero">
@@ -242,7 +245,7 @@
                     </li>
                 </ul>
             </div>
-            
+
         </section>
 
         <section class="how">
@@ -293,25 +296,27 @@
                     </li>
                 </ul>
             </div>
-              <div data-modal class="backdrop is-hidden">
-            <div class="modal modal--how">
-                <button data-close-modal class="modal__close">
-                    <svg class="modal__close-icon">
-                        <use href="./images/icons/symbol-defs.svg#icon-close"></use>
-                    </svg>
-                </button>
-                <h3 class="modal__title">How it’s made?</h3>
-                <div class="modal__how-video"><svg class="modal__how-play"><use href="./images/icons/symbol-defs.svg#icon-play">
-                    </use>
-                </svg></div>
-                <p class="modal__how-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor incididunt ut labore et</p>
+            <div data-modal class="backdrop is-hidden">
+                <div class="modal modal--how">
+                    <button data-close-modal class="modal__close">
+                        <svg class="modal__close-icon">
+                            <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <h3 class="modal__title">How it’s made?</h3>
+                    <div class="modal__how-video"><svg class="modal__how-play">
+                            <use href="./images/icons/symbol-defs.svg#icon-play">
+                            </use>
+                        </svg></div>
+                    <p class="modal__how-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor incididunt ut labore et</p>
+                </div>
             </div>
-        </div>
         </section>
 
-      
+
 
         <section class="slider">
             <div class="container">
@@ -359,7 +364,7 @@
                 </div>
 
             </div>
-            
+
         </section>
 
         <section class="location">
@@ -429,50 +434,52 @@
                             class="button__icon">
                             <use href="./images/icons/symbol-defs.svg#icon-button-arrow">
                         </svg></button>
-                    <button data-open-modal class="button button__location--clear">franchise <svg
-                            class="button__icon">
+                    <button data-open-modal class="button button__location--clear">franchise <svg class="button__icon">
                             <use href="./images/icons/symbol-defs.svg#icon-button-arrow">
                         </svg></button>
                 </div>
             </div>
             <div data-modal class="backdrop is-hidden">
-            <div class="modal--franchise modal ">
-                <button data-close-modal class="modal__close">
-                    <svg class="modal__close-icon">
-                        <use href="./images/icons/symbol-defs.svg#icon-close"></use>
-                    </svg>
-                </button>
-                <h3 class="modal__title modal__title--franchise">Thank you for your interest in owning an Ice Cream shop</h3>
-                <p class="modal__franchise-text">Due to the overwhelming volume of franchise requests we are not accepting new
-                    franchisee applications at this time. Once the application process resumes, we will contact you for
-                    further information. Please fill out the contact information below and we will reach out for
-                    additional information. We appreciate your patience.</p>
-                <form action="" class="modal__form">
-                    <input placeholder="Name" type="text" class="modal__input">
-                    <input placeholder="Phone" type="number" class="modal__input">
-                    <input placeholder="Email" type="email" class="modal__input">
-                    <textarea class="modal__textarea" placeholder="Comment" name="" id=""></textarea>
-                    <button class="button button--modal">Submit</button>
-                
-                </form>
-            </div>
-        </div>
-        <div data-modal class="backdrop is-hidden">
-            <div class="modal modal--location">
-                <button data-close-modal class="modal__close">
-                    <svg class="modal__close-icon">
-                        <use href="./images/icons/symbol-defs.svg#icon-close"></use>
-                    </svg>
-                </button>
-                <h3 class="modal__title">How it’s made?</h3>
-                <img src="./images/content/map.png" alt="map" class="modal__location-img">
-                <button class="button button--modal">Open map</button>
-            </div>
-        </div>
-        </section>
-        
+                <div class="modal--franchise modal ">
+                    <button data-close-modal class="modal__close">
+                        <svg class="modal__close-icon">
+                            <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <h3 class="modal__title modal__title--franchise">Thank you for your interest in owning an Ice Cream
+                        shop</h3>
+                    <p class="modal__franchise-text">Due to the overwhelming volume of franchise requests we are not
+                        accepting new
+                        franchisee applications at this time. Once the application process resumes, we will contact you
+                        for
+                        further information. Please fill out the contact information below and we will reach out for
+                        additional information. We appreciate your patience.</p>
+                    <form action="" class="modal__form">
+                        <input placeholder="Name" type="text" class="modal__input">
+                        <input placeholder="Phone" type="number" class="modal__input">
+                        <input placeholder="Email" type="email" class="modal__input">
+                        <textarea class="modal__textarea" placeholder="Comment" name="" id=""></textarea>
+                        <button class="button button--modal">Submit</button>
 
-        
+                    </form>
+                </div>
+            </div>
+            <div data-modal class="backdrop is-hidden">
+                <div class="modal modal--location">
+                    <button data-close-modal class="modal__close">
+                        <svg class="modal__close-icon">
+                            <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                    <h3 class="modal__title">How it’s made?</h3>
+                    <img src="./images/content/map.png" alt="map" class="modal__location-img">
+                    <button class="button button--modal">Open map</button>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
 
     <footer class="footer">

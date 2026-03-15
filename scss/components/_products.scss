@@ -12,6 +12,9 @@
         color: $title-color;
         text-align: center;
         padding-top: 46px;
+        @media(max-width:768px) {
+            font-size: 22px;
+        }
     }
 
     &__desc {
@@ -21,11 +24,15 @@
         text-align: center;
         padding-top: 66px;
         padding-bottom: 60px;
+        @media(max-width:768px) {
+            font-size: 14px;
+        }
     }
 
     &__arrow {
-        
+        width: 40px;
         height: 16px;
+        
     }
 
     &__image {
@@ -35,6 +42,10 @@
         border-radius: 50%;
         position: relative;
         top: -16px;
+        @media(max-width:768px) {
+            width: 200px;
+            height: 200px;
+        }
     }
 
     &__list {
@@ -46,9 +57,12 @@
         padding-inline: 34px;
         padding-bottom: 60px;
         position: relative; 
-        
         padding-top: 165px;
-    
+        @media(max-width:768px) {
+            padding-top: 108px;
+            padding-inline: 12px;
+            padding-bottom: 12px;
+        }
     }
 
     &__item--green {
@@ -75,6 +89,10 @@
         top: -167px;
         left: 50%;
         transform: translateX(-50%);
+        @media(max-width:768px) {
+            width: 200px;
+            height: 200px;
+        }
         }
     
 
