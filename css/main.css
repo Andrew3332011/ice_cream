@@ -150,7 +150,29 @@ button {
   max-width: 1200px;
   min-width: 320px;
   margin: 0px auto;
-  padding-inline: 15px;
+}
+@media (max-width: 1200px) {
+  .container {
+    padding-inline: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-inline: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    max-width: 480px;
+    padding-inline: 20px;
+  }
+}
+@media (max-width: 320px) {
+  .container {
+    max-width: 320px;
+    padding-inline: 20px;
+  }
 }
 
 body {
@@ -330,6 +352,12 @@ body {
     height: 329px;
   }
 }
+@media (max-width: 480px) {
+  .hero__img {
+    width: 218px;
+    height: 267px;
+  }
+}
 .hero__item-subtitle {
   font-weight: 900;
   font-size: 46px;
@@ -375,6 +403,11 @@ body {
     padding-top: 12px;
   }
 }
+@media (max-width: 480px) {
+  .hero__wrapper-plate {
+    display: none;
+  }
+}
 .hero__wrapper-text {
   display: flex;
   flex-direction: column;
@@ -399,6 +432,11 @@ body {
 @media (max-width: 768px) {
   .hero__list {
     gap: 20px;
+  }
+}
+@media (max-width: 480px) {
+  .hero__list {
+    display: none;
   }
 }
 
@@ -475,6 +513,11 @@ body {
 }
 .button--header:disabled {
   background-color: #ababab;
+}
+@media (max-width: 480px) {
+  .button--header {
+    display: none;
+  }
 }
 .button__container {
   display: flex;
@@ -858,9 +901,14 @@ body {
   padding: 40px;
   border-radius: 24px;
   box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
-  padding-block: 40px;
-  padding-left: 24px;
-  padding-right: 27px;
+  flex-basis: calc((100% - 32px) / 3);
+}
+@media (max-width: 768px) {
+  .location__item {
+    padding-block: 40px;
+    padding-inline: 24px;
+    flex-basis: calc((100% - 16px) / 3);
+  }
 }
 .location__type {
   font-weight: 500;
@@ -902,7 +950,7 @@ body {
 .location__link::after {
   content: "";
   height: 1px;
-  width: 288px;
+  width: 100%;
   background-color: #e1e1e1;
   margin-top: 32px;
   display: block;
@@ -934,14 +982,9 @@ body {
 .location__hours-list::after {
   content: "";
   height: 1px;
-  width: 288px;
+  width: 100%;
   background-color: #e1e1e1;
   margin-top: 32px;
-}
-@media (max-width: 768px) {
-  .location__hours-list::after {
-    width: 176px;
-  }
 }
 .location__hours-day {
   font-weight: 500;
@@ -1047,6 +1090,7 @@ body {
 @media (max-width: 768px) {
   .footer__contact {
     font-size: 14px;
+    letter-spacing: 0;
   }
 }
 .footer__number {

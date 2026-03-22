@@ -1,11 +1,28 @@
 .container {
-    max-width: 1200px;
-    min-width: 320px;
-    margin: 0px auto;
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0px auto;
+  @media (max-width: 1200px) {
     padding-inline: 15px;
+  }
+  @media (max-width: 768px) {
+    max-width: 768px;
+    padding-inline: 32px;
+  }
+
+  @media (max-width: 480px) {
+    max-width: 480px;
+    padding-inline: 20px;
+
+  }
+
+  @media(max-width:320px) {
+    max-width: 320px;
+    padding-inline: 20px;
+  }
 }
 
 body {
-    background-color: $background-color;
-    font-family: $main-font;
+  background-color: $background-color;
+  font-family: $main-font;
 }

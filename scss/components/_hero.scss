@@ -54,6 +54,7 @@
       width: 152px;
       height: 152px;
     }
+    
   }
 
   &__text-plate {
@@ -78,6 +79,10 @@
     @media(max-width:768px) {
       width: 268px;
       height: 329px;
+    }
+    @media(max-width:480px) {
+      width: 218px;
+      height: 267px;
     }
   }
 
@@ -121,6 +126,9 @@
       gap: 32px;
       padding-top: 12px;
     }
+    @media(max-width:480px) {
+      display: none;
+    }
   }
 
   &__wrapper-text {
@@ -135,6 +143,7 @@
 
   &__wrapper-icecream {
     display: flex;
+    
   }
 
   &__list {
@@ -146,5 +155,9 @@
     @media(max-width:768px) {
       gap: 20px;
     }
+    @media(max-width:480px) {
+      display: none;
+    }
   }
+  
 }
