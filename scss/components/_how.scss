@@ -6,6 +6,9 @@
         align-items: center;
         gap: 109px;
         padding-top: 82px;
+        @media(max-width:768px) {
+            gap:38px;
+        }
     }
 
     &__desc {
@@ -13,6 +16,9 @@
         letter-spacing: 0.04em;
         color: $text-color;
         padding-bottom: 8px;
+        @media(max-width:768px) {
+            font-size: 12px;
+        }
     }
 
     &__recipe {
@@ -21,6 +27,9 @@
         letter-spacing: 0.04em;
         color: $text-color;
         padding-bottom: 54px;
+        @media(max-width:768px) {
+            font-size: 12px;
+        }
     }
 
     &__image {
@@ -28,12 +37,20 @@
         height: 490px;
         position: absolute;
         top: 39px;
+        @media(max-width:768px) {
+            width: 330px;
+            height: 330px;
+            top: 26px;
+        }
     }
 
     &__list {
         display: flex;
         gap: 32px;
-        padding-top: 99px;
+        padding-top: 60px;
+        @media(max-width:768px) {
+            gap:80px;
+        }
     }
 
     &__icon {
@@ -54,6 +71,10 @@
         padding-top: 40px;
         padding-bottom: 12px;
         color: $text-color;
+        @media(max-width:768px) {
+            font-size: 48px;
+            padding-top: 32px;
+        }
     }
 
     &__text {
@@ -61,6 +82,9 @@
         letter-spacing: 0.02em;
         line-height: 1.76;
         text-align: center;
+        @media(max-width:768px) {
+            line-height: 1.74;
+        }
     }
 
     &__img-wrapper {
@@ -71,5 +95,9 @@
         flex-shrink: 0;
         position: relative;
         box-shadow: 0 8px 30px 0 rgba(153, 114, 23, 0.25);
+        @media(max-width:768px) {
+            width: 330px;
+            height: 330px;
+        }
     }
 }

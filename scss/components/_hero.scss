@@ -3,6 +3,9 @@
     background-image: url(../images/bg/dots.png);
     background-repeat: no-repeat;
     background-position: bottom;
+    @media(max-width:768px) {
+      background-image: url(../images/bg/bottom-dots.png);
+    }
   &__title {
     font-size: 38px;
     font-family: $title-font;
@@ -14,6 +17,10 @@
     @media(max-width: 768px) {
       font-size: 26px;
       padding-top: 14px;
+      width: 247px;
+    }
+    @media(max-width:480px) {
+      padding-top: 40px;
     }
   }
 

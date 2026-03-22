@@ -5,6 +5,9 @@
     text-transform: uppercase;
     text-align: center;
     color: $title-color;
+    @media(max-width:768px) {
+        font-size: 22px;
+    }
 
     &--how {
         color: $text-color;

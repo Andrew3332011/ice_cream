@@ -4,6 +4,9 @@
   &__list {
     display: flex;
     gap: 32px;
+    @media(max-width:768px) {
+      gap: 16px;
+    }
   }
 
   &__item {
@@ -11,6 +14,9 @@
     padding: 40px;
     border-radius: 24px;
     box-shadow: 0 8px 30px 0 rgba(212, 20, 67, 0.1);
+    padding-block: 40px;
+    padding-left: 24px;
+    padding-right: 27px;
   }
 
   &__type {
@@ -36,6 +42,10 @@
     text-transform: capitalize;
     padding-top: 32px;
     padding-bottom: 8px;
+    @media(max-width:768px) {
+      font-size: 14px;
+      padding-bottom: 12px;
+    }
   }
 
   &__link {
@@ -52,9 +62,15 @@
       background-color: $border-color;
       margin-top: 32px;
       display: block;
+      @media(max-width:768px) {
+        width: 176px;
+      }
     }
     &:hover {
       text-decoration: underline;
+    }
+    @media(max-width:768px) {
+      font-size: 14px;
     }
   }
 
@@ -63,6 +79,9 @@
     flex-direction: column;
     gap: 12px;
     padding-top: 32px;
+    @media(max-width:768px) {
+      gap: 8px;
+    }
 
     &::after {
       content: "";
@@ -70,6 +89,9 @@
       width: 288px;
       background-color: $border-color;
       margin-top: 32px;
+      @media(max-width:768px) {
+        width: 176px;
+      }
     }
   }
 
@@ -80,6 +102,9 @@
     letter-spacing: 0.04em;
     color: $title-color;
     text-transform: capitalize;
+    @media(max-width:768px) {
+      font-size: 14px;
+    }
   }
 
   &__hours-time {
@@ -87,6 +112,9 @@
     font-size: 16px;
     line-height: 1.86;
     color: $second_text-color;
+    @media(max-width:768px) {
+      font-size: 14px;
+    }
   }
 
   &__contact-list {
@@ -101,5 +129,8 @@
     font-size: 16px;
     line-height: 1.5;
     color: $title-color;
+    @media(max-width:768px) {
+      font-size: 14px;
+    }
   }
 }

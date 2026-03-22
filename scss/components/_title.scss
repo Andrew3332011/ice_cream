@@ -6,6 +6,9 @@
     text-transform: uppercase;
     padding-top: 12px;
     color: $title-color;
+    @media(max-width:768px) {
+        font-size: 34px;
+    }
 
     &--how {
         color: $text-color;
@@ -13,5 +16,8 @@
 
     &--products {
         padding-bottom: 303px;
+        @media(max-width:768px) {
+            padding-bottom: 200px;
+        }
     }
 }

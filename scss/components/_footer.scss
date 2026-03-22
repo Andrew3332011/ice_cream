@@ -5,12 +5,17 @@
     &__container {
         display: flex;
         justify-content: space-between;
+        
     }
     &__subtitle {
         font-size: 30px;
         letter-spacing: 0.04em;
         text-transform: uppercase;
         color: $text-color;
+        @media(max-width:768px) {
+            font-size: 26px;
+            font-weight: 700;
+        }
     }
 
     &__title {
@@ -20,6 +25,9 @@
         text-transform: uppercase;
         color: $text-color;
         padding-top: 14px;
+        @media(max-width:768px) {
+            font-size: 48px;
+        }
     }
 
     &__list {
@@ -50,6 +58,9 @@
         line-height: 1.86;
         letter-spacing: 0.02em;
         color: $title-color;
+        @media(max-width:768px) {
+            font-size: 14px;
+        }
     }
 
     &__number {
@@ -69,5 +80,8 @@
         letter-spacing: 0.02em;
         color: $copyright_text-color;
         text-align: center;
+        @media(max-width:768px) {
+            font-size: 14px;
+        }
     }
 }

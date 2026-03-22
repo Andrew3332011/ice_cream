@@ -1,7 +1,7 @@
 .header {
+    padding-top: 8px;
     &__container {
         display: flex;
-       margin-top: 8px;
         align-items: center;
     }
 
@@ -27,9 +27,74 @@
         color: $text-color;
         font-weight: 700;
         font-family: $main-font;
+        position: relative;
+    display: block;
         &:hover {
             color: $accent-color;
         }
+    }
+
+    &__input {
+        display: none;
+    }
+
+    @media(max-width:768px) {
+         &__label {
+      display: block;
+      height: 30px;
+      width: 30px;
+      margin-left: auto;
+      position: relative;
+    }
+
+    &__label &__btn {
+      top: 10px;
+    }
+
+    &__label &__btn::before {
+      top: -8px;
+    }
+
+    &__label &__btn::after {
+      top: 8px;
+    }
+
+    &__label &__btn,
+    &__label &__btn::before,
+    &__label &__btn::after {
+      position: absolute;
+      content: "";
+      display: block;
+      width: 25px;
+      height: 2px;
+      background-color: rgb(0, 0, 0);
+      z-index: 1;
+    }
+
+    &__nav-list {
+      display: none;
+    }
+
+    &__input[type="checkbox"]:checked ~ &__nav-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    input[type="checkbox"]:checked ~ label span {
+      transform: rotate(-45deg);
+      transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    input[type="checkbox"]:checked ~ label span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+
+    input[type="checkbox"]:checked ~ label span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
     }
 
     
