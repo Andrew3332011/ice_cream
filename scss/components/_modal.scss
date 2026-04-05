@@ -35,6 +35,7 @@
 
   &--hero {
     max-height: 996px;
+    display: none;
     @media(max-width:480px) {
       min-height: 968px;
     }
