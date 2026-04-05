@@ -9,7 +9,7 @@ openBtns.forEach(btn => {
 
     if (targetModal) {
       backdrop = document.querySelector(
-        `.modal-backdrop[data-modal="${targetModal}"]`
+        `.backdrop[data-modal="${targetModal}"]`
       );
     } else {
       backdrop = btn.closest('.products__item')?.querySelector('.backdrop');
@@ -24,7 +24,7 @@ openBtns.forEach(btn => {
 
 closeBtns.forEach(btn => {
   btn.addEventListener('click', () => {
-    const backdrop = btn.closest('.modal-backdrop');
+    const backdrop = btn.closest('.backdrop');
     if (backdrop) {
       backdrop.classList.add('is-hidden');
       document.body.classList.remove('no-scroll');
@@ -33,7 +33,7 @@ closeBtns.forEach(btn => {
 });
 
 document.addEventListener('click', e => {
-  if (e.target.classList.contains('modal-backdrop')) {
+  if (e.target.classList.contains('backdrop')) {
     e.target.classList.add('is-hidden');
     document.body.classList.remove('no-scroll');
   }
@@ -42,7 +42,7 @@ document.addEventListener('click', e => {
 document.addEventListener('keydown', e => {
   if (e.key === 'Escape') {
     document
-      .querySelectorAll('.modal-backdrop:not(.is-hidden)')
+      .querySelectorAll('.backdrop:not(.is-hidden)')
       .forEach(backdrop => {
         backdrop.classList.add('is-hidden');
       });

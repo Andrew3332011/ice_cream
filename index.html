@@ -23,25 +23,28 @@
             <a href="./index.html" class="header__logo"><svg class="header__logo-icon">
                     <use href="./images/icons/symbol-defs.svg#icon-logo">
                 </svg></a>
+            <div class="header__wrapper">
+                <nav class="header__nav">
 
-            <nav class="header__nav">
-             <input class="header__input" id="toggle" type="checkbox">
-          <label class="header__label" for="toggle"><span class="header__btn"></span></label>
-                <ul class="header__nav-list">
-                    
-                    <li class="header__nav-item"><a href="" class="header__nav-link">Home</a></li>
-                    <li class="header__nav-item"><a href="" class="header__nav-link">How it’s made?</a></li>
-                    <li class="header__nav-item"><a href="" class="header__nav-link">Our products</a></li>
-                    <li class="header__nav-item"><a href="" class="header__nav-link">Contact</a></li>
-                </ul>
-            </nav>
+                    <input class="header__input" id="toggle" type="checkbox">
+                    <label class="header__label" for="toggle"><span class="header__btn"></span></label>
 
-            <button data-open-modal class="button button--header">
-                Buy now
-                <svg class="button__icon">
-                    <use href="./images/icons/symbol-defs.svg#icon-button-arrow">
-                </svg>
-            </button>
+                    <ul class="header__nav-list">
+
+                        <li class="header__nav-item"><a href="" class="header__nav-link">Home</a></li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">How it’s made?</a></li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">Our products</a></li>
+                        <li class="header__nav-item"><a href="" class="header__nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <button data-open-modal class="button button--header">
+                    Buy now
+                    <svg class="button__icon">
+                        <use href="./images/icons/symbol-defs.svg#icon-button-arrow">
+                    </svg>
+                </button>
+            </div>
         </div>
         <div data-modal class="modal-backdrop is-hidden">
             <div class="modal">
@@ -98,7 +101,7 @@
                         ice cream
                         made with
                         <span class="hero__title-span">
-                        passion
+                            passion
                         </span>
                     </h1>
                     <div class="button__container">
@@ -202,7 +205,7 @@
             </div>
         </section>
         <section class="products">
-            <div class="container products__container">
+            <div class="container products__container ">
                 <h3 class="subtitle subtitle--products">100% natural</h3>
                 <h2 class="title title--products">products</h2>
                 <ul class="products__list">
@@ -317,6 +320,7 @@
                         tempor incididunt ut labore et</p>
                 </div>
             </div>
+             
         </section>
 
 
@@ -433,7 +437,7 @@
                     </li>
                 </ul>
                 <div class="button__group">
-                    <button data-open-modal class="button button__location--fill">our locations <svg
+                    <button data-open-modal="location-modal" class="button button__location--fill">our locations <svg
                             class="button__icon">
                             <use href="./images/icons/symbol-defs.svg#icon-button-arrow">
                         </svg></button>
@@ -467,14 +471,14 @@
                     </form>
                 </div>
             </div>
-            <div data-modal class="backdrop is-hidden">
+           <div data-modal="location-modal" class="backdrop is-hidden">
                 <div class="modal modal--location">
                     <button data-close-modal class="modal__close">
                         <svg class="modal__close-icon">
                             <use href="./images/icons/symbol-defs.svg#icon-close"></use>
                         </svg>
                     </button>
-                    <h3 class="modal__title">How it’s made?</h3>
+                    <h3 class="modal__title">Our location</h3>
                     <img src="./images/content/map.png" alt="map" class="modal__location-img">
                     <button class="button button--modal">Open map</button>
                 </div>

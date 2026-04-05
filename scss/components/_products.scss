@@ -4,6 +4,12 @@
     background-color: $third_accent-color;
     padding-bottom: 60px;
 
+    &__container {
+        @media(max-width:480px) {
+        padding-inline: 72.5px;
+    }
+    }
+
     &__name {
         font-weight: 700;
         font-size: 30px;
@@ -15,6 +21,10 @@
         @media(max-width:768px) {
             font-size: 22px;
         }
+
+         @media(max-width:480px) {
+            font-size: 20px;
+         }
     }
 
     &__desc {
@@ -28,6 +38,16 @@
         @media(max-width:768px) {
             font-size: 14px;
         }
+         @media(max-width:480px) {
+            font-size: 14px;
+            padding-bottom: 61px;
+            
+         }
+         @media(max-width:320px) {
+            padding-top: 40px;
+            padding-bottom: 101px;
+
+         }
     }
 
     &__arrow {
@@ -55,6 +75,10 @@
     &__list {
         display: flex;
         gap: 29px;
+         @media(max-width:480px) {
+            flex-direction: column;
+            gap: 168px;
+         }
     }
 
     &__item {
@@ -71,7 +95,16 @@
             padding-top: 108px; 
             padding-inline: 12px;
             padding-bottom: 12px;
+            flex-basis: calc((100% - 32px)/3);
         }
+         @media(max-width:480px) {
+            padding-inline: 60px;
+            padding-bottom: 16px;
+            
+         }
+         @media(max-width:320px) {
+            padding-inline: 40px;
+         }
     }
 
     &__item--green {

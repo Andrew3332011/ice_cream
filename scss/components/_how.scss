@@ -9,6 +9,10 @@
         @media(max-width:768px) {
             gap:38px;
         }
+         @media(max-width:480px) {
+            flex-direction: column;
+            gap: 40px;
+         }
     }
 
     &__desc {
@@ -19,6 +23,14 @@
         @media(max-width:768px) {
             font-size: 12px;
         }
+         @media(max-width:480px) {
+            text-align: center;
+            padding-bottom: 4px;
+            padding-inline: 130px;
+         }
+         @media(max-width:320px) {
+            padding-inline: 50px;
+         }
     }
 
     &__recipe {
@@ -30,6 +42,16 @@
         @media(max-width:768px) {
             font-size: 12px;
         }
+         @media(max-width:480px) {
+            text-align: center;
+            line-height: 1.62;
+            font-size: 12px;
+            letter-spacing: normal;
+            padding-inline: 130px;
+         }
+         @media(max-width:320px) {
+            padding-inline: 50px
+         }
     }
 
     &__image {
@@ -42,6 +64,11 @@
             height: 330px;
             top: 26px;
         }
+         @media(max-width:480px) {
+            width: 279px;
+            height: 279px;
+            top: 22px;
+         }
     }
 
     &__list {
@@ -51,6 +78,10 @@
         @media(max-width:768px) {
             gap:80px;
         }
+         @media(max-width:480px) {
+            flex-direction: column;
+            gap: 32px;
+         }
     }
 
     &__icon {
@@ -75,6 +106,10 @@
             font-size: 48px;
             padding-top: 32px;
         }
+         @media(max-width:480px) {
+            font-size: 36px;
+            padding-block: 16px;
+         }
     }
 
     &__text {
@@ -85,6 +120,13 @@
         @media(max-width:768px) {
             line-height: 1.74;
         }
+         @media(max-width:480px) {
+            font-size: 12px;
+            padding-inline: 125px;
+         }
+         @media(max-width:320px) {
+            padding-inline: 45px
+         }
     }
 
     &__img-wrapper {
@@ -99,5 +141,9 @@
             width: 330px;
             height: 330px;
         }
+         @media(max-width:480px) {
+            width: 279px;
+            height: 279px;
+         }
     }
 }

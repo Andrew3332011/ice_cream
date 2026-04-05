@@ -1,21 +1,21 @@
-// .backdrop {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background-color: rgba(0, 0, 0, 0.5);
-//   opacity: 1;
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 1;
 
-//   &.is-hidden {
-//     opacity: 0;
-//     pointer-events: none;
-//   }
-// }
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
 
-// .no-scroll {
-//   overflow: hidden;
-// }
+.no-scroll {
+  overflow: hidden;
+}
 
 .modal {
   min-width: 568px;
@@ -28,26 +28,39 @@
   border: 2px solid $accent-color;
   border-radius: 10px;
   padding-block: 32px;
-  display: none;
+  
+  @media(max-width:480px) {
+    max-width: 280px;
+  }
 
   &--hero {
-    min-height: 996px;
-    display: none;
+    max-height: 996px;
+    @media(max-width:480px) {
+      min-height: 968px;
+    }
   }
 
   &--franchise {
     min-height: 668px;
     max-width: 568px;
+    @media(max-width:480px) {
+      min-height: 674px;
+    }
   }
 
   &--location {
     min-height: 458px;
+    @media(max-width:480px) {
+      min-height: 365px;
+    }
   }
 
   &--how {
     min-height: 449px;
     max-width: 568px;
-    display: none;
+    @media(max-width:480px) {
+      min-height: 459px;
+    }
   }
 
   &__title {
@@ -56,6 +69,10 @@
     text-align: center;
     color: $title-color;
     font-family: $title-font;
+    @media(max-width:480px) {
+      font-size: 16px;
+      line-height: 1.5;
+    }
   }
 
   &__form {
@@ -64,6 +81,9 @@
     gap: 16px;
     padding-top: 48px;
     align-items: center;
+    @media(max-width:480px) {
+      gap: 12px;
+    }
   }
 
   &__input {
@@ -76,6 +96,14 @@
     &::placeholder {
       line-height: 1.4;
       color: $title-color;
+      @media(max-width:480px) {
+        font-size: 12px;
+      }
+    }
+    @media(max-width:480px) {
+      padding-block: 8px;
+      padding-inline: 12px;
+      width: 224px;
     }
   }
 
@@ -92,6 +120,13 @@
       line-height: 1.4;
       color: $title-color;
       font-size: 14px;
+      @media(max-width:480px) {
+        font-size: 12px;
+      }
+    }
+    @media(max-width:480px) {
+      width: 224px;
+      height: 65px;
     }
   }
 
@@ -100,6 +135,10 @@
     justify-content: center;
     gap: 20px;
     padding-top: 24px;
+    @media(max-width:480px) {
+      padding-top: 22px;
+      gap: 9px;
+    }
   }
 
   &__close {
@@ -113,6 +152,10 @@
   &__close-icon {
     width: 13.33px;
     height: 13.37px;
+    @media(max-width:480px) {
+      width: 11.11;
+      height: 11.14;
+    }
   }
 
   &__hero-item {
@@ -122,6 +165,10 @@
     border: 2px solid $background-color;
     border-radius: 40px;
     width: 65px;
+    @media(max-width:480px) {
+      width: 53px;
+      gap: 8px;
+    }
   }
 
   &__hero-number {
@@ -135,6 +182,12 @@
     border-radius: 100%;
     box-shadow: 0 6px 20px 0 rgba(10, 136, 23, 0.25);
     margin-inline: 6px;
+    @media(max-width:480px) {
+      font-size: 10px;
+      padding-inline: 12px;
+      padding-block: 8px;
+      line-height: 2.8;
+    }
   }
 
   &__hero-type {
@@ -143,12 +196,19 @@
     color: $title-color;
     padding-bottom: 14px;
     text-transform: capitalize;
+    @media(max-width:480px) {
+      font-size: 10px;
+      padding-bottom: 8px;
+    }
   }
 
   &__hero-img {
     margin: auto;
     display: block;
     padding-top: 24px;
+    @media(max-width:480px) {
+      padding-top: 20px;
+    }
   }
 
   &__hero-ingredients {
@@ -171,6 +231,9 @@
     flex-direction: column;
     gap: 11px;
     padding-inline: 40px;
+    @media(max-width:480px) {
+      padding-inline: 20px;
+    }
   }
 
   &__hero-made {
@@ -185,16 +248,27 @@
     color: $title-color;
     padding-inline: 60px;
     padding-top: 24px;
+    @media(max-width:480px) {
+      font-size: 14px;
+      padding-inline: 28px;
+    }
   }
 
   &__title--franchise {
     padding-inline: 123px;
+    @media(max-width:480px) {
+      padding-inline: 30px;
+    }
   }
 
   &__location-img {
     margin: auto;
     display: block;
     padding-block: 32px;
+    @media(max-width:480px) {
+      padding-top: 20px;
+      padding-bottom: 24px;
+    }
   }
 
   &__how-video {
@@ -208,6 +282,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media(max-width:480px){
+      width: 224px;
+      height: 199px;
+      margin-top: 20px;
+    }
   }
 
   &__how-text {
@@ -217,6 +296,10 @@
     text-align: center;
     padding-top: 32px;
     padding-inline: 60px;
+    @media(max-width:480px) {
+      padding-top: 20px;
+      font-size: 14px;
+    }
   }
 
   &__how-play {
@@ -279,7 +362,7 @@
     height: 132px;
     border-radius: 50%;
     flex-shrink: 0;
-   left: 50%;
+    left: 50%;
     top: -56px;
     
   }
