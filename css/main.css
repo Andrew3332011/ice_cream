@@ -187,15 +187,9 @@ body {
   display: flex;
   align-items: center;
 }
-.header__nav {
-  padding-left: 308px;
-  padding-right: 204px;
-}
-@media (max-width: 768px) {
-  .header__nav {
-    padding-right: 32px;
-    padding-left: 420px;
-  }
+.header__container {
+  display: flex;
+  justify-content: space-between;
 }
 .header__nav-list {
   display: flex;
@@ -210,10 +204,16 @@ body {
 .header__logo {
   z-index: 3;
 }
+.header__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 204px;
+}
 @media (max-width: 768px) {
   .header__wrapper {
     display: flex;
     align-items: center;
+    gap: 32px;
   }
 }
 .header__nav-link {
@@ -1455,6 +1455,7 @@ body {
   border: 2px solid #f8d24e;
   border-radius: 10px;
   padding-block: 32px;
+  display: none;
 }
 @media (max-width: 480px) {
   .modal {
