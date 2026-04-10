@@ -1455,7 +1455,6 @@ body {
   border: 2px solid #f8d24e;
   border-radius: 10px;
   padding-block: 32px;
-  display: none;
 }
 @media (max-width: 480px) {
   .modal {
@@ -1464,11 +1463,10 @@ body {
 }
 .modal--hero {
   max-height: 996px;
-  display: none;
 }
 @media (max-width: 480px) {
   .modal--hero {
-    min-height: 968px;
+    max-height: 968px;
   }
 }
 .modal--franchise {

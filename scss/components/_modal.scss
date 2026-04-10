@@ -28,16 +28,15 @@
   border: 2px solid $accent-color;
   border-radius: 10px;
   padding-block: 32px;
-  display: none;
+  
   @media(max-width:480px) {
     max-width: 280px;
   }
 
   &--hero {
     max-height: 996px;
-    display: none;
     @media(max-width:480px) {
-      min-height: 968px;
+      max-height: 968px;
     }
   }
 
