@@ -6,8 +6,11 @@
 
     &__container {
         @media(max-width:480px) {
-        padding-inline: 72.5px;
+        padding-inline: 80px;
     }
+     @media(max-width:320px) {
+        padding-inline: 20px;
+     }
     }
 
     &__name {
@@ -104,6 +107,7 @@
          }
          @media(max-width:320px) {
             padding-inline: 40px;
+            min-width: 280px;
          }
     }
 

@@ -14,6 +14,15 @@
      }
   }
 
+  &__container {
+     @media(max-width:480px) {
+      padding-inline: 100px;
+     }
+     @media(max-width:320px) {
+      padding-inline: 20px;
+     }
+  }
+
   &__item {
     background-color: $third_accent-color;
     padding: 40px;

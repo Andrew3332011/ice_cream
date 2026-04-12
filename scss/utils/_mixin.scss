@@ -1,0 +1,35 @@
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin button-base {
+  @include flex-center;
+  padding-block: 12px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  line-height: 1.29;
+  cursor: pointer;
+}
+
+@mixin button-variant($type: fill) {
+  @if $type == fill {
+    background-color: $accent-color;
+
+    &:hover { background-color: $hover-color; }
+    &:focus { color: $third_accent-color; }
+    &:disabled { background-color: $disabled-color; }
+  }
+
+  @else if $type == outline {
+    background-color: transparent;
+    border: 2px solid $accent-color;
+
+    &:hover { border-color: $hover-color; }
+    &:focus { color: $third_accent-color; }
+    &:disabled { border-color: $disabled-color; }
+  }
+}
