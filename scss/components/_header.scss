@@ -41,13 +41,15 @@
     color: $text-color;
     font-weight: 700;
     font-family: $main-font;
-    position: relative;
     display: block;
     &:hover {
       color: $accent-color;
     }
     @media (max-width: 768px) {
       font-size: 48px;
+    }
+    @media (max-width: 480px) {
+      font-size: 32px;
     }
   }
 
@@ -125,6 +127,12 @@
     input[type="checkbox"]:checked ~ label span::after {
       top: 0;
       transform: rotate(90deg);
+    }
+    .header__input:checked ~ .header__nav-list .button--header {
+      display: block;
+      z-index: 3;
+        position: absolute;
+        bottom: 88px;
     }
   }
 }
