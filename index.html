@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Ice cream</title>
     <link rel="website icon" href="./images/icons/favicon.jpg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/main.css">
@@ -13,7 +13,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Seymour+One&display=swap"
         rel="stylesheet">
-
 
 </head>
 
@@ -89,7 +88,7 @@
                 </ul>
                 <form action="" class="modal__form">
                     <input type="text" class="modal__input" placeholder="Name">
-                    <input type="number" class="modal__input" placeholder="Phone">
+                    <input type="tel" class="modal__input" placeholder="Phone">
                     <textarea class="modal__textarea" name="" id="" placeholder="Comment"></textarea>
 
                     <button class="button button--modal">Submit</button>
@@ -159,7 +158,12 @@
                         </svg>
                     </button>
                     <h3 class="modal__title">Chololate icecream</h3>
-                    <img src="./images/content/chocolate-icecream.png" alt="icecream" class="modal__hero-img">
+                    <picture>
+                        <source srcset="./images/content/chocolate_icecream-desctop-modal@1x.png 1x, ./images/content/chocolate_icecream-desctop-modal@2x.png 2x">
+                        
+                        <img src="./images/content/chocolate-icecream.png" alt="icecream" class="modal__hero-img">
+                    </picture>
+                    
                     <ul class="modal__hero-list">
                         <li class="modal__hero-item">
 
@@ -212,7 +216,7 @@
                     </ul>
                     <form action="" class="modal__form">
                         <input class="modal__input" placeholder="Name" type="text">
-                        <input class="modal__input" placeholder="Phone" type="number">
+                        <input class="modal__input" placeholder="Phone" type="tel">
                         <textarea class="modal__textarea" placeholder="Comment" name="" id=""></textarea>
                         <button class="button button--modal button__hero--info">Submit</button>
                     </form>

@@ -117,7 +117,6 @@
     display: flex;
     flex-direction: column;
     gap: 12px;
-    padding-top: 32px;
     @media(max-width:768px) {
       gap: 8px;
     }
@@ -127,7 +126,7 @@
       height: 1px;
       width: 100%;
       background-color: $border-color;
-      margin-top: 32px;
+      margin-top: 20px;
     }
      @media(max-width:480px) {
       width: 216px;

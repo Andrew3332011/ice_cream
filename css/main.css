@@ -146,6 +146,14 @@ button {
   cursor: pointer;
 }
 
+input {
+  outline: none;
+}
+
+textarea {
+  outline: none;
+}
+
 .container {
   max-width: 1200px;
   min-width: 320px;
@@ -178,7 +186,8 @@ button {
 body {
   background-color: #84a178;
   font-family: "Montserrat", sans-serif;
-  cursor: url("./images/content/cursor.png"), auto;
+  cursor: url("../images/content/cursor.png") 16 16, auto;
+  font-size: 14px;
 }
 
 .header {
@@ -187,9 +196,6 @@ body {
 .header__container {
   display: flex;
   align-items: center;
-}
-.header__container {
-  display: flex;
   justify-content: space-between;
 }
 .header__nav-list {
@@ -418,6 +424,7 @@ body {
 .hero__img {
   width: 456px;
   height: 560px;
+  display: block;
 }
 @media (max-width: 768px) {
   .hero__img {
@@ -440,6 +447,9 @@ body {
     margin: auto;
   }
 }
+.hero__item {
+  text-align: right;
+}
 .hero__item-subtitle {
   font-weight: 900;
   font-size: 46px;
@@ -454,6 +464,7 @@ body {
 .hero__item-text {
   color: #fcfcfc;
   padding-top: 4px;
+  white-space: nowrap;
 }
 @media (max-width: 768px) {
   .hero__item-text {
@@ -519,7 +530,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 16px;
-  max-width: 64px;
+  text-align: right;
 }
 @media (max-width: 768px) {
   .hero__list {
@@ -597,6 +608,7 @@ body {
   border: none;
   line-height: 1.29;
   cursor: pointer;
+  font-family: "Montserrat", sans-serif;
   background-color: #f8d24e;
 }
 .button:hover {
@@ -654,7 +666,8 @@ body {
 }
 
 .button--hero {
-  padding-inline: 34px;
+  padding-inline: 32px;
+  padding-block: 10px;
   text-transform: capitalize;
   background-color: transparent;
   border: 2px solid #f8d24e;
@@ -1083,6 +1096,7 @@ body {
   display: block;
   margin: auto;
   border-radius: 8px;
+  z-index: 0;
 }
 @media (max-width: 768px) {
   .slider__img {
@@ -1296,7 +1310,6 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding-top: 32px;
 }
 @media (max-width: 768px) {
   .location__hours-list {
@@ -1308,7 +1321,7 @@ body {
   height: 1px;
   width: 100%;
   background-color: #e1e1e1;
-  margin-top: 32px;
+  margin-top: 20px;
 }
 @media (max-width: 480px) {
   .location__hours-list {
@@ -1549,7 +1562,8 @@ body {
   }
 }
 .modal--hero {
-  max-height: 996px;
+  max-height: 650px;
+  overflow-y: scroll;
 }
 @media (max-width: 480px) {
   .modal--hero {
@@ -1656,6 +1670,56 @@ body {
     width: 224px;
     height: 65px;
   }
+}
+.modal__buy-list {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  padding-top: 103px;
+  padding-inline: 54px;
+}
+.modal__buy-image {
+  width: 132px;
+  height: 132px;
+  margin: auto;
+  display: block;
+  position: relative;
+  top: -50px;
+}
+.modal__buy-name {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #131313;
+  padding-bottom: 20px;
+  padding-inline: 16px;
+}
+.modal__buy-item {
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  flex-basis: calc((100% - 64px) / 3);
+  text-align: center;
+  height: 132px;
+}
+.modal__buy-item--green {
+  border: 2px solid #96af8c;
+}
+.modal__buy-item--yellow {
+  border: 2px solid #efd478;
+  background-color: #efd478;
+}
+.modal__buy-item--orange {
+  border: 2px solid rgba(213, 117, 63, 0.7);
+}
+.modal__buy-wrapper {
+  width: 132px;
+  height: 132px;
+  border-radius: 50%;
+  top: -56px;
+  position: absolute;
 }
 .modal__hero-list {
   display: flex;
@@ -1841,51 +1905,4 @@ body {
   fill: white;
   width: 36px;
   height: 36px;
-}
-.modal__buy-list {
-  display: flex;
-  gap: 32px;
-  justify-content: center;
-  padding-top: 103px;
-}
-.modal__buy-image {
-  width: 132px;
-  height: 132px;
-  margin: auto;
-  display: block;
-  position: relative;
-  top: -50px;
-}
-.modal__buy-name {
-  font-weight: 700;
-  font-size: 16px;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  text-align: center;
-  color: #131313;
-  padding-bottom: 20px;
-  padding-inline: 16px;
-}
-.modal__buy-item {
-  border-radius: 15px;
-  cursor: pointer;
-  position: relative;
-}
-.modal__buy-item--green {
-  border: 2px solid #96af8c;
-}
-.modal__buy-item--yellow {
-  border: 2px solid #efd478;
-  background-color: #efd478;
-}
-.modal__buy-item--orange {
-  border: 2px solid rgba(213, 117, 63, 0.7);
-}
-.modal__buy-wrapper {
-  width: 132px;
-  height: 132px;
-  border-radius: 50%;
-  flex-shrink: 0;
-  left: 50%;
-  top: -56px;
 }

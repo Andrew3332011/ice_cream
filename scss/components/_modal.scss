@@ -28,14 +28,15 @@
   border: 2px solid $accent-color;
   border-radius: 10px;
   padding-block: 32px;
-  
-  @media(max-width:480px) {
+
+  @media (max-width: 480px) {
     max-width: 280px;
   }
 
   &--hero {
-    max-height: 996px;
-    @media(max-width:480px) {
+    max-height: 650px;
+    overflow-y: scroll;
+    @media (max-width: 480px) {
       max-height: 968px;
     }
   }
@@ -43,14 +44,14 @@
   &--franchise {
     min-height: 668px;
     max-width: 568px;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       min-height: 674px;
     }
   }
 
   &--location {
     min-height: 458px;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       min-height: 365px;
     }
   }
@@ -58,7 +59,7 @@
   &--how {
     min-height: 449px;
     max-width: 568px;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       min-height: 459px;
     }
   }
@@ -69,7 +70,7 @@
     text-align: center;
     color: $title-color;
     font-family: $title-font;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       font-size: 16px;
       line-height: 1.5;
     }
@@ -81,7 +82,7 @@
     gap: 16px;
     padding-top: 48px;
     align-items: center;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       gap: 12px;
     }
   }
@@ -96,11 +97,11 @@
     &::placeholder {
       line-height: 1.4;
       color: $title-color;
-      @media(max-width:480px) {
+      @media (max-width: 480px) {
         font-size: 12px;
       }
     }
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       padding-block: 8px;
       padding-inline: 12px;
       width: 224px;
@@ -120,14 +121,73 @@
       line-height: 1.4;
       color: $title-color;
       font-size: 14px;
-      @media(max-width:480px) {
+      @media (max-width: 480px) {
         font-size: 12px;
       }
     }
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       width: 224px;
       height: 65px;
     }
+  }
+
+    &__buy-list {
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    padding-top: 103px;
+    padding-inline: 54px;
+  }
+
+  &__buy-image {
+    width: 132px;
+    height: 132px;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: -50px;
+  }
+
+  &__buy-name {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-align: center;
+    color: $title-color;
+    padding-bottom: 20px;
+    padding-inline: 16px;
+  }
+
+  &__buy-item {
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    flex-basis: calc((100% - 64px)/3);
+    text-align: center;
+    height: 132px;
+  }
+
+  &__buy-item--green {
+    border: 2px solid $modal_border-color;
+  }
+
+  &__buy-item--yellow {
+    border: 2px solid $background_second-color;
+    background-color: $background_second-color;
+  }
+
+  &__buy-item--orange {
+    border: 2px solid $wrapper_third-color;
+  }
+
+  &__buy-wrapper {
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    // flex-shrink: 0;
+    top: -56px;
+    position: absolute;
   }
 
   &__hero-list {
@@ -135,7 +195,7 @@
     justify-content: center;
     gap: 20px;
     padding-top: 24px;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       padding-top: 22px;
       gap: 9px;
     }
@@ -152,7 +212,7 @@
   &__close-icon {
     width: 13.33px;
     height: 13.37px;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       width: 11.11;
       height: 11.14;
     }
@@ -165,7 +225,7 @@
     border: 2px solid $background-color;
     border-radius: 40px;
     width: 65px;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       width: 53px;
       gap: 8px;
     }
@@ -182,7 +242,7 @@
     border-radius: 100%;
     box-shadow: 0 6px 20px 0 rgba(10, 136, 23, 0.25);
     margin-inline: 6px;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       font-size: 10px;
       padding-inline: 12px;
       padding-block: 8px;
@@ -196,7 +256,7 @@
     color: $title-color;
     padding-bottom: 14px;
     text-transform: capitalize;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       font-size: 10px;
       padding-bottom: 8px;
     }
@@ -206,7 +266,7 @@
     margin: auto;
     display: block;
     padding-top: 24px;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       padding-top: 20px;
     }
   }
@@ -231,7 +291,7 @@
     flex-direction: column;
     gap: 11px;
     padding-inline: 40px;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       padding-inline: 20px;
     }
   }
@@ -248,7 +308,7 @@
     color: $title-color;
     padding-inline: 60px;
     padding-top: 24px;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       font-size: 14px;
       padding-inline: 28px;
     }
@@ -256,7 +316,7 @@
 
   &__title--franchise {
     padding-inline: 123px;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       padding-inline: 30px;
     }
   }
@@ -265,7 +325,7 @@
     margin: auto;
     display: block;
     padding-block: 32px;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       padding-top: 20px;
       padding-bottom: 24px;
     }
@@ -282,7 +342,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @media(max-width:480px){
+    @media (max-width: 480px) {
       width: 224px;
       height: 199px;
       margin-top: 20px;
@@ -296,7 +356,7 @@
     text-align: center;
     padding-top: 32px;
     padding-inline: 60px;
-    @media(max-width:480px) {
+    @media (max-width: 480px) {
       padding-top: 20px;
       font-size: 14px;
     }
@@ -308,63 +368,5 @@
     height: 36px;
   }
 
-  &__buy-list {
-    display: flex;
-    gap: 32px;
-    justify-content: center;
-    padding-top: 103px;
-  }
 
-  &__buy-image {
-    width: 132px;
-    height: 132px;
-    margin: auto;
-    display: block; 
-    position: relative;
-    top: -50px;
-  }
-
-  &__buy-name {
-    font-weight: 700;
-    font-size: 16px;
-    letter-spacing: 0.04em;
-    text-transform: uppercase;
-    text-align: center;
-    color: $title-color;
-    padding-bottom: 20px;
-    padding-inline: 16px;
-  }
-
-  &__buy-item {
-    border-radius: 15px;
-    cursor: pointer;
-    position: relative;
-  }
-
-  &__buy-item--green {
-    border: 2px solid $modal_border-color;
-    
-  }
-
-  &__buy-item--yellow {
-    border: 2px solid $background_second-color;
-    background-color: $background_second-color;
-    
-  }
-
-  &__buy-item--orange {
-    border: 2px solid $wrapper_third-color;
-    
-  }
-
-  &__buy-wrapper {
-    width: 132px;
-    height: 132px;
-    border-radius: 50%;
-    flex-shrink: 0;
-    left: 50%;
-    top: -56px;
-    
-  }
-  
 }

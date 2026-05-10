@@ -194,7 +194,8 @@
 // }
 
 .button--hero {
-  padding-inline: 34px;
+  padding-inline: 32px;
+  padding-block: 10px;
   text-transform: capitalize;
   @include button-variant(outline);
   @media (max-width: 768px) {
