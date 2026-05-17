@@ -6,6 +6,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
 
   &.is-hidden {
     opacity: 0;
@@ -18,7 +19,7 @@
 }
 
 .modal {
-  min-width: 568px;
+  width: 568px;
   z-index: 8;
   position: absolute;
   top: 50%;
@@ -131,22 +132,68 @@
     }
   }
 
-    &__buy-list {
+  &__buy-list {
     display: flex;
     gap: 32px;
-    justify-content: center;
-    padding-top: 103px;
-    padding-inline: 54px;
+    margin-inline: 54px;
+  }
+
+  &__form--buy {
+    padding-top: 40px;
+  }
+
+  &__title--buy {
+    padding-bottom: 103px;
   }
 
   &__buy-image {
     width: 132px;
     height: 132px;
-    margin: auto;
-    display: block;
     position: relative;
-    top: -50px;
+    top: -7px;
   }
+
+  &__buy-item {
+    padding: 95px 16px 20px;
+    position: relative;
+    width: 132px;
+  }
+
+  &__buy-item--green {
+    border: 2px solid $modal_border-color;
+    border-radius: 15px;
+  }
+
+  &__buy-item--yellow {
+    border: 2px solid $wrapper_second-color;
+    border-radius: 15px;
+    background-color: $background_second-color;
+  }
+
+  &__buy-item--orange {
+    border: 2px solid $second_accent-color;
+    border-radius: 15px;
+  }
+
+  &__buy-wrapper {
+   border-radius: 100%;
+    position: absolute;
+    left: -2px;
+    top: -66px;
+    box-shadow: 0 5px 20px 0 rgba(153, 114, 23, 0.25);
+  }
+
+  &__buy-wrapper--green {
+    background-color: $modal_border-color;
+  }
+   &__buy-wrapper--yellow {
+    background-color: $wrapper_second-color;
+  }
+
+   &__buy-wrapper--orange {
+    background-color: $second_accent-color;
+  }
+  
 
   &__buy-name {
     font-weight: 700;
@@ -155,40 +202,10 @@
     text-transform: uppercase;
     text-align: center;
     color: $title-color;
-    padding-bottom: 20px;
-    padding-inline: 16px;
+    white-space: nowrap;
   }
 
-  &__buy-item {
-    border-radius: 15px;
-    cursor: pointer;
-    position: relative;
-    flex-basis: calc((100% - 64px)/3);
-    text-align: center;
-    height: 132px;
-  }
-
-  &__buy-item--green {
-    border: 2px solid $modal_border-color;
-  }
-
-  &__buy-item--yellow {
-    border: 2px solid $background_second-color;
-    background-color: $background_second-color;
-  }
-
-  &__buy-item--orange {
-    border: 2px solid $wrapper_third-color;
-  }
-
-  &__buy-wrapper {
-    width: 132px;
-    height: 132px;
-    border-radius: 50%;
-    // flex-shrink: 0;
-    top: -56px;
-    position: absolute;
-  }
+ 
 
   &__hero-list {
     display: flex;
@@ -328,6 +345,8 @@
     @media (max-width: 480px) {
       padding-top: 20px;
       padding-bottom: 24px;
+      width: 224px;
+      height: 199px;
     }
   }
 

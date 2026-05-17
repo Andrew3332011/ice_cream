@@ -17,7 +17,7 @@
 </head>
 
 <body>
-    <header class="header animate__animated animate__fadeIn">
+    <header class="header">
         <div class="header__container container">
             <a href="./index.html" class="header__logo"><svg class="header__logo-icon">
                     <use href="./images/icons/symbol-defs.svg#icon-logo">
@@ -59,7 +59,7 @@
                         <use href="./images/icons/symbol-defs.svg#icon-close"></use>
                     </svg>
                 </button>
-                <h3 class="modal__title">Buy now</h3>
+                <h3 class="modal__title modal__title--buy">Buy now</h3>
                 <ul class="modal__buy-list">
                     <li class="modal__buy-item modal__buy-item--green"><a href=""
                             class="modal__buy-link modal__buy-link--green">
@@ -86,7 +86,7 @@
                         </a>
                     </li>
                 </ul>
-                <form action="" class="modal__form">
+                <form action="" class="modal__form modal__form--buy">
                     <input type="text" class="modal__input" placeholder="Name">
                     <input type="tel" class="modal__input" placeholder="Phone">
                     <textarea class="modal__textarea" name="" id="" placeholder="Comment"></textarea>
@@ -100,7 +100,7 @@
 
 
     <main>
-        <section class="hero animate__animated animate__zoomInDown">
+        <section class="hero animate__zoomInDown">
             <div class="container hero__container">
                 <div class="hero__wrapper">
                     <h1 class="hero__title">
@@ -159,11 +159,12 @@
                     </button>
                     <h3 class="modal__title">Chololate icecream</h3>
                     <picture>
-                        <source srcset="./images/content/chocolate_icecream-desctop-modal@1x.png 1x, ./images/content/chocolate_icecream-desctop-modal@2x.png 2x">
-                        
+                        <source
+                            srcset="./images/content/chocolate_icecream-desctop-modal@1x.png 1x, ./images/content/chocolate_icecream-desctop-modal@2x.png 2x">
+
                         <img src="./images/content/chocolate-icecream.png" alt="icecream" class="modal__hero-img">
                     </picture>
-                    
+
                     <ul class="modal__hero-list">
                         <li class="modal__hero-item">
 
@@ -324,19 +325,19 @@
                     <li class="how__item"><svg class="how__icon">
                             <use href="./images/icons/symbol-defs.svg#icon-cow-icon">
                         </svg>
-                        <h3 class="how__amount animate__animated animate__heartBeat">721</h3>
+                        <h3 class="how__amount ">721</h3>
                         <p class="how__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                     </li>
                     <li class="how__item"><svg class="how__icon">
                             <use href="./images/icons/symbol-defs.svg#icon-kettlebell-icon">
                         </svg>
-                        <h3 class="how__amount animate__animated animate__heartBeat">16kg</h3>
+                        <h3 class="how__amount ">16kg</h3>
                         <p class="how__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                     </li>
                     <li class="how__item"><svg class="how__icon">
                             <use href="./images/icons/symbol-defs.svg#icon-ice-cream-icon">
                         </svg>
-                        <h3 class="how__amount animate__animated animate__heartBeat">84</h3>
+                        <h3 class="how__amount">84</h3>
                         <p class="how__text">Aliquam ac dui vel dui vulputate consectetur. Mauris massa.</p>
                     </li>
                 </ul>

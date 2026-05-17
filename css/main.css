@@ -195,7 +195,7 @@ body {
 }
 .header__container {
   display: flex;
-  align-items: center;
+  align-items: end;
   justify-content: space-between;
 }
 .header__nav-list {
@@ -1534,6 +1534,7 @@ body {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 1;
+  transition: opacity 1s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .backdrop.is-hidden {
   opacity: 0;
@@ -1545,7 +1546,7 @@ body {
 }
 
 .modal {
-  min-width: 568px;
+  width: 568px;
   z-index: 8;
   position: absolute;
   top: 50%;
@@ -1674,17 +1675,53 @@ body {
 .modal__buy-list {
   display: flex;
   gap: 32px;
-  justify-content: center;
-  padding-top: 103px;
-  padding-inline: 54px;
+  margin-inline: 54px;
+}
+.modal__form--buy {
+  padding-top: 40px;
+}
+.modal__title--buy {
+  padding-bottom: 103px;
 }
 .modal__buy-image {
   width: 132px;
   height: 132px;
-  margin: auto;
-  display: block;
   position: relative;
-  top: -50px;
+  top: -7px;
+}
+.modal__buy-item {
+  padding: 95px 16px 20px;
+  position: relative;
+  width: 132px;
+}
+.modal__buy-item--green {
+  border: 2px solid #96af8c;
+  border-radius: 15px;
+}
+.modal__buy-item--yellow {
+  border: 2px solid rgba(248, 210, 78, 0.7);
+  border-radius: 15px;
+  background-color: #efd478;
+}
+.modal__buy-item--orange {
+  border: 2px solid #d6936d;
+  border-radius: 15px;
+}
+.modal__buy-wrapper {
+  border-radius: 100%;
+  position: absolute;
+  left: -2px;
+  top: -66px;
+  box-shadow: 0 5px 20px 0 rgba(153, 114, 23, 0.25);
+}
+.modal__buy-wrapper--green {
+  background-color: #96af8c;
+}
+.modal__buy-wrapper--yellow {
+  background-color: rgba(248, 210, 78, 0.7);
+}
+.modal__buy-wrapper--orange {
+  background-color: #d6936d;
 }
 .modal__buy-name {
   font-weight: 700;
@@ -1693,33 +1730,7 @@ body {
   text-transform: uppercase;
   text-align: center;
   color: #131313;
-  padding-bottom: 20px;
-  padding-inline: 16px;
-}
-.modal__buy-item {
-  border-radius: 15px;
-  cursor: pointer;
-  position: relative;
-  flex-basis: calc((100% - 64px) / 3);
-  text-align: center;
-  height: 132px;
-}
-.modal__buy-item--green {
-  border: 2px solid #96af8c;
-}
-.modal__buy-item--yellow {
-  border: 2px solid #efd478;
-  background-color: #efd478;
-}
-.modal__buy-item--orange {
-  border: 2px solid rgba(213, 117, 63, 0.7);
-}
-.modal__buy-wrapper {
-  width: 132px;
-  height: 132px;
-  border-radius: 50%;
-  top: -56px;
-  position: absolute;
+  white-space: nowrap;
 }
 .modal__hero-list {
   display: flex;
@@ -1866,6 +1877,8 @@ body {
   .modal__location-img {
     padding-top: 20px;
     padding-bottom: 24px;
+    width: 224px;
+    height: 199px;
   }
 }
 .modal__how-video {
